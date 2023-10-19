@@ -1,6 +1,7 @@
 package com.bobjo.mini.view;
 
 import com.bobjo.mini.controller.FoodData;
+import com.bobjo.mini.controller.RandomFromAll;
 
 import java.util.Scanner;
 
