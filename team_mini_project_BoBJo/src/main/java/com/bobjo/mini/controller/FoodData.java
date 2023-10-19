@@ -4,6 +4,7 @@ import com.bobjo.mini.model.dto.Food;
 
 public class FoodData {
 
+
     private Food[] flist = new Food[4];
     {
 //        flist[0] 한식

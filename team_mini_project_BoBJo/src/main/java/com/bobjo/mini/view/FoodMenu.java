@@ -1,5 +1,6 @@
 package com.bobjo.mini.view;
 
+import com.bobjo.mini.controller.Category;
 import com.bobjo.mini.controller.FoodData;
 
 import java.util.Scanner;
@@ -31,6 +32,8 @@ public class FoodMenu {
             choice = sc.nextInt();
 
             FoodData fd = new FoodData();
+            Category cg = new Category();
+
 
             switch (choice){
                 case 1 :
@@ -39,7 +42,7 @@ public class FoodMenu {
                     break;
                 case 2 :
                     System.out.println("한식, 일식, 양식, 중식 중에 골라봐~");
-
+                    cg.categoryRandom();
                     break;
                 case 3 :
                     System.out.println("너가 원하는 음식들을 적어봐 내가 골라줄게!");
