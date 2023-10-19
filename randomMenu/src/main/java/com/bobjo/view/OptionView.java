@@ -13,7 +13,7 @@ public class OptionView {
             System.out.print("번호를 입력해 주세요 : ");
             choice = sc.nextInt();
 
-            MenuData fd = new MenuData();
+            MenuData md = new MenuData();
 
             switch (choice){
                 case 1 :

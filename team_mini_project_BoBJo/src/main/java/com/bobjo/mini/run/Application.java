@@ -1,12 +1,12 @@
 package com.bobjo.mini.run;
 
-import com.bobjo.mini.view.FoodMenu;
+import com.bobjo.mini.view.Option;
 
 public class Application {
 
     public static void main(String[] args) {
 
-        FoodMenu fm = new FoodMenu();
+        Option fm = new Option();
         fm.mainmenu();
 
     }
