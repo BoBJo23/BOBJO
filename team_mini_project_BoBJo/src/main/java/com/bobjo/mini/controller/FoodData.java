@@ -29,7 +29,7 @@ public class FoodData {
 
     public void viewOfAllMenu() {
         foodlist();
-        // 다시 할거에여!!
+        // 다시 할거에여!!!
         System.out.println(koreanList);
         System.out.println(chineseList);
         System.out.println(japaneseList);
