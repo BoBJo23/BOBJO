@@ -81,7 +81,7 @@ public class FoodData {
             }
 
         }
-        System.out.println();
+        System.out.println("");
 
 
 
