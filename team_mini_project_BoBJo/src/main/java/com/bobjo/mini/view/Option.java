@@ -5,7 +5,7 @@ import com.bobjo.mini.controller.FoodData;
 
 import java.util.Scanner;
 
-public class FoodMenu {
+public class Option {
 
     Scanner sc = new Scanner(System.in);
     public void mainmenu() {
@@ -58,7 +58,7 @@ public class FoodMenu {
                     break;
                 case 6 :
                     System.out.println("전체 메뉴");
-                    fd.viewallMenu();
+                    fd.viewOfAllMenu();
                     break;
                 case 0 :
                     System.out.println("프로그램을 종료합니다.");
