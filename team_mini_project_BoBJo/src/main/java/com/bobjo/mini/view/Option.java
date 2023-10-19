@@ -4,7 +4,7 @@ import com.bobjo.mini.controller.FoodData;
 
 import java.util.Scanner;
 
-public class FoodMenu {
+public class Option {
 
     Scanner sc = new Scanner(System.in);
     public void mainmenu() {
