@@ -1,12 +1,13 @@
 package com.bobjo.mini.view;
 
 import com.bobjo.mini.controller.FoodData;
+import com.bobjo.mini.model.dto.Food;
 
 import java.util.Scanner;
 
 public class FoodMenu {
-
     Scanner sc = new Scanner(System.in);
+
     public void mainmenu() {
 
         int choice;
