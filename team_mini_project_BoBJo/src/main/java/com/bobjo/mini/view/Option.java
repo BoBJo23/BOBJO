@@ -17,9 +17,9 @@ public class Option {
             System.out.println("||            ㅗ  ㅡ   ㅜ ㅓ   ㅁ ㅓ   ㅈ ㅣ ?　　         ||");
             System.out.println("||　 　　　　       ㄹ            ㄱ 　   　        　     ||");
             System.out.println("||                                　　                  ||");
-            System.out.println("||    　 　　    1. 올랜덤 메뉴 추천　　                    ||");
-            System.out.println("||              2. 카테고리 선택 후 랜덤 메뉴 추천 　     　 ||");
-            System.out.println("||              3. 원하는 메뉴 직접 입력 후 랜덤! 　        ||");
+            System.out.println("||    　 　　    1. 랜덤 메뉴 추천　　                      ||");
+            System.out.println("||              2. 카테고리 선택 후 랜덤 메뉴 추천 　      　||");
+            System.out.println("||              3. 원하는 메뉴 직접 입력 후 랜덤 　         ||");
             System.out.println("||              4. 한명 몰빵!           　  　           ||");
             System.out.println("||              5. 더치페이!             　 　           ||");
             System.out.println("||              6. 전체 메뉴 보기           　 　         ||");
