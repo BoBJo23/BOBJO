@@ -44,7 +44,6 @@ public class Category {
             System.out.print("\u001B[0m");
             System.out.print("☆☆ 위의 카테고리 중 1개를 선택하세요 ☆☆ --- ▷" + " ");
             System.out.print("");
-            System.out.print("");
 
 
             int categoryChoice = sc.nextInt();
@@ -81,7 +80,7 @@ public class Category {
         } while (categoryChoice != 5);
     }
     public void next(String st) {
-        System.out.println("                                  오늘 메뉴는 !!!");
+        System.out.println("※※※※※※※※※※※※※※※※※※  오늘 메뉴는  ※※※※※※※※※※※※※※※※※※ !!!");
         System.out.println("");
         System.out.println(" =============     ==============       =============     ============== ");
         System.out.println(" ∥                              ∥      ∥                               ∥ ");
@@ -95,7 +94,7 @@ public class Category {
         System.out.println("");
         System.out.println("");
         System.out.println("");
-        System.out.println("       ★★★★★★★★★★★★ " + "( " + st + " )" + " 당첨 ★★★★★★★★★★★★");
+        System.out.println("          ★★★★★★★★★★★★ " + "( " + st + " )" + " 당첨 ★★★★★★★★★★★★");
         System.out.println("");
         System.out.println("");
         System.out.println("");
