@@ -1,13 +1,13 @@
 package com.bobjo.mini.controller;
 
-import com.bobjo.mini.view.FoodMenu;
+import com.bobjo.mini.view.Option;
 
 import java.util.Random;
 import java.util.Scanner;
 
 public class Category {
     FoodData fd = new FoodData();
-    FoodMenu fm = new FoodMenu();
+    Option op = new Option();
 
     Scanner sc = new Scanner(System.in);
     int categoryChoice;
@@ -46,28 +46,29 @@ public class Category {
             System.out.print("");
             System.out.print("");
 
+
             int categoryChoice = sc.nextInt();
             Random random = new Random();
-
+            fd.foodlist();
             switch (categoryChoice) {
                 case 1: // 한식
-                    int randomIndexKorean = random.nextInt(fd.flist[0].length);
-                    Category = fd.flist[0][randomIndexKorean];
+                    int randomIndexKorean = random.nextInt(fd.koreanList.size());
+                    Category = fd.koreanList.get(randomIndexKorean);
                     next(Category);
                     break;
                 case 2: // 일식
-                    int randomIndexJapanese = random.nextInt(japaneseMenu.length);
-                    Category = japaneseMenu[randomIndexJapanese];
+                    int randomIndexJapanese = random.nextInt(fd.japaneseList.size());
+                    Category = fd.japaneseList.get(randomIndexJapanese);
                     next(Category);
                     break;
                 case 3: // 양식
-                    int randomIndexWestern = random.nextInt(westernMenu.length);
-                    Category = westernMenu[randomIndexWestern];
+                    int randomIndexWestern = random.nextInt(fd.westernList.size());
+                    Category = fd.westernList.get(randomIndexWestern);
                     next(Category);
                     break;
                 case 4: // 중식
-                    int randomIndexChinese = random.nextInt(chineseMenu.length);
-                    Category = chineseMenu[randomIndexChinese];
+                    int randomIndexChinese = random.nextInt(fd.chineseList.size());
+                    Category = fd.chineseList.get(randomIndexChinese);
                     next(Category);
                     break;
                 case 5: // 돌아가기
@@ -85,9 +86,9 @@ public class Category {
         System.out.println(" =============     ==============       =============     ============== ");
         System.out.println(" ∥                              ∥      ∥                               ∥ ");
         System.out.println(" ∥                              ∥      ∥                               ∥ ");
-        System.out.println(" =============                          =============                       ");
+        System.out.println(" =============                          =============                     ");
         System.out.println("                 ==================                     ================== ");
-        System.out.println("===============                        ===============                       ");
+        System.out.println("===============                        ===============                     ");
         System.out.println("       ∥            ∥                         ∥            ∥               ");
         System.out.println("       ∥            ∥                         ∥            ∥               ");
         System.out.println("       ∥            =============             ∥            =============  ");
@@ -99,7 +100,7 @@ public class Category {
         System.out.println("");
         System.out.println("");
         System.out.println("");
-        fm.mainmenu();
+        op.mainmenu();
     }
 }
 
