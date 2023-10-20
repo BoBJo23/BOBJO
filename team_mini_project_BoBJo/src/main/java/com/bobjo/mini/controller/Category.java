@@ -74,7 +74,7 @@ public class Category {
 
     public void next(String st) {
 
-        System.out.println("\u001B[33m               ※※※※※※※※※※※※※※※※※  오늘 메뉴는  ※※※※※※※※※※※※※※※※※");
+        System.out.println("\u001B[33m              ※※※※※※※※※※※※※※※※※※  오늘 메뉴는  ※※※※※※※※※※※※※※※※※※");
         System.out.println("\u001B[33m                     ===========    ===========     ===========     ===========");
         System.out.println("\u001B[33m                     ∥                        ∥     ∥                         ∥ ");
         System.out.println("\u001B[33m                     ===========                    ===========                 ");
@@ -82,7 +82,7 @@ public class Category {
         System.out.println("\u001B[33m                    =============                  =============                 ");
         System.out.println("\u001B[33m                         ∥           ∥                   ∥           ∥          ");
         System.out.println("\u001B[33m                         ∥           ===========         ∥           ===========");
-        System.out.println("\u001B[33m               ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
+        System.out.println("\u001B[33m               ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
         System.out.print("\u001B[0m");
         System.out.println("");
         System.out.println("                         ★★★★★★★★★★★★ " + "( " + st + " )" + " 당첨 ★★★★★★★★★★★★");
@@ -96,7 +96,7 @@ public class Category {
 
             if (number >= 4) {
                 System.out.print("                          \u001B[31m※ 메뉴에서 없는 번호를 선택하였음으로 프로그램 종료합니다 ※");
-                System.out.println("");
+                System.out.println("\u001B[0m");
                 System.exit(0);
             }
             switch (number) {
