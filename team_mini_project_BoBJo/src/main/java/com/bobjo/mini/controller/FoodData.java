@@ -29,12 +29,64 @@ public class FoodData {
 
     public void viewOfAllMenu() {
         foodlist();
-        //
-        // 다시 할거에여!!!!
-        System.out.println(koreanList);
-        System.out.println(chineseList);
-        System.out.println(japaneseList);
-        System.out.println(westernList);
+        int count1= 0;
+        int count2 = 0;
+        int count3 = 0;
+        int count4 = 0;
+
+        System.out.println("=============== 한식 ===============");
+
+        for(int i = 0; i < koreanList.size(); i++){
+            count1 ++;
+            if(count1 % 5 == 0){
+                System.out.println();
+            }else {
+                System.out.print(koreanList.get(i) + "   ");
+            }
+
+        }
+        System.out.println();
+        System.out.println("=============== 중식 ===============");
+
+        for(int u = 0; u < chineseList.size(); u++){
+            count2 ++;
+            if(count2 % 5 == 0){
+                System.out.println();
+            }else {
+                System.out.print(chineseList.get(u) + "   ");
+            }
+
+        }
+        System.out.println();
+        System.out.println("=============== 일식 ===============");
+
+        for(int y = 0; y < japaneseList.size(); y++){
+            count3 ++;
+            if(count3 % 5 == 0){
+                System.out.println();
+            }else {
+                System.out.print(japaneseList.get(y) + "   ");
+            }
+
+        }
+        System.out.println();
+        System.out.println("=============== 양식 ===============");
+
+        for(int k = 0; k < westernList.size(); k++){
+            count4 ++;
+            if(count4 % 5 == 0){
+                System.out.println();
+            }else {
+                System.out.print(westernList.get(k) + "   ");
+            }
+
+        }
+        System.out.println("");
+
+
+
+
+
     }
 
 

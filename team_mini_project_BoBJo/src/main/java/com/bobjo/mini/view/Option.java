@@ -1,6 +1,9 @@
 package com.bobjo.mini.view;
 
+import com.bobjo.mini.controller.Category;
+import com.bobjo.mini.controller.Dutchpay;
 import com.bobjo.mini.controller.FoodData;
+import com.bobjo.mini.controller.MolppangRandom;
 
 import java.util.Scanner;
 
@@ -31,6 +34,9 @@ public class Option {
             choice = sc.nextInt();
 
             FoodData fd = new FoodData();
+            Category cg = new Category();
+            MolppangRandom rd = new MolppangRandom();
+            Dutchpay dp = new Dutchpay();
 
             switch (choice){
                 case 1 :
@@ -39,7 +45,7 @@ public class Option {
                     break;
                 case 2 :
                     System.out.println("한식, 일식, 양식, 중식 중에 골라봐~");
-
+                    cg.categoryRandom();
                     break;
                 case 3 :
                     System.out.println("너가 원하는 음식들을 적어봐 내가 골라줄게!");
@@ -47,11 +53,11 @@ public class Option {
                     break;
                 case 4 :
                     System.out.println("한명한테 몰빵 !!! 과연 누구!!!?");
-
+                    rd.molppangRandom();
                     break;
                 case 5 :
                     System.out.println("무조건 더치페이지~");
-
+                    dp.Dutchpay();
                     break;
                 case 6 :
                     System.out.println("전체 메뉴");
