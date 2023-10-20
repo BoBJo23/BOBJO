@@ -8,5 +8,6 @@ public class Application {
 
         FoodMenu fm = new FoodMenu();
         fm.mainmenu();
+        System.out.println("d");
     }
 }
