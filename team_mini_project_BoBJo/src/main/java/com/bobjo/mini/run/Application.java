@@ -1,6 +1,6 @@
 package com.bobjo.mini.run;
-
 import com.bobjo.mini.view.Option;
+
 
 public class Application {
 
@@ -8,5 +8,6 @@ public class Application {
 
         Option fm = new Option();
         fm.mainmenu();
+
     }
 }
