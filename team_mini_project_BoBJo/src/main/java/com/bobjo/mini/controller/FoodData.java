@@ -28,7 +28,7 @@ public class FoodData {
     }
 
     public void viewOfAllMenu() {
-        foodlist();
+
         int count1= 0;
         int count2 = 0;
         int count3 = 0;
@@ -43,8 +43,8 @@ public class FoodData {
             }else {
                 System.out.print(koreanList.get(i) + "   ");
             }
-
         }
+
         System.out.println();
         System.out.println("=============== 중식 ===============");
 
@@ -84,11 +84,7 @@ public class FoodData {
         System.out.println("");
 
 
-
-
-
     }
-
 
 }
 

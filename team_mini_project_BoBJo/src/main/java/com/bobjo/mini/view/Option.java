@@ -21,6 +21,7 @@ public class Option {
             System.out.println(" 4. 계산할 사람 고르기");
             System.out.println(" 5. 1/N 계산하기");
             System.out.println(" 6. 전체 메뉴 보기");
+            System.out.println(" 7. 직접 메뉴 추가하기");
             System.out.println(" 0. 프로그램 종료");
             System.out.println("");
             System.out.print("번호를 입력해 주세요 : ");
@@ -31,6 +32,7 @@ public class Option {
             MolppangRandom rd = new MolppangRandom();
             Dutchpay dp = new Dutchpay();
             RandomFoodInput rfi = new RandomFoodInput();
+            AddMenu am = new AddMenu();
 
             switch (choice){
                 case 1 :
@@ -67,6 +69,13 @@ public class Option {
                     System.out.println("<전체 메뉴 보기>");
                     fd.viewOfAllMenu();
                     break;
+
+                case 7 :
+                    System.out.println();
+                    System.out.println("<직접 메뉴 추가하기>");
+                    am.addMenu();
+                    break;
+
                 case 0 :
                     System.out.println();
                     System.out.println("<프로그램 종료>");
