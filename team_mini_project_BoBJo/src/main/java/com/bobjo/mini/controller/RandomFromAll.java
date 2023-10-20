@@ -1,9 +1,7 @@
 package com.bobjo.mini.controller;
 
 
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -17,12 +15,20 @@ public class RandomFromAll {
 
         //랜덤
         int answer;
+        Set<Integer> previous = new HashSet<>();
         do {
             Random randomFromAll = new Random();
-            int randomIndex = randomFromAll.nextInt(mergedList.size());
-            System.out.println(mergedList.get(randomIndex));
+            int randomIndex;
+            do{
+                randomIndex = randomFromAll.nextInt(mergedList.size());
+            } while (previous.contains(randomIndex));  // 중복이면 다시 뽑게하기
+
+            previous.add(randomIndex); // 이전에 뽑은 목록 저장
+
+            System.out.println("♡ " +mergedList.get(randomIndex) + " ♡");
             System.out.println("'1' 입력 : 이 메뉴로 결정하기");
             System.out.println("'2' 입력 : 메뉴 새로 뽑기");
+            System.out.println();
             Scanner sc = new Scanner(System.in);
             System.out.print("입력 : ");
             answer = sc.nextInt();
