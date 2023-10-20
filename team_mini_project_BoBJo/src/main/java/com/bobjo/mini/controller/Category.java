@@ -10,9 +10,10 @@ public class Category {
     Option op = new Option();
     Scanner sc = new Scanner(System.in);
     int categoryChoice;
+
     public void categoryRandom() {
 
-        String Category ;
+        String Category;
 
         do {
             System.out.println("\u001B[32m ┌---------┐");
@@ -68,34 +69,49 @@ public class Category {
             }
         } while (categoryChoice != 5);
     }
+
+    int number;
+
     public void next(String st) {
+
+        System.out.println("\u001B[33m               ※※※※※※※※※※※※※※※※※  오늘 메뉴는  ※※※※※※※※※※※※※※※※※");
+        System.out.println("\u001B[33m                     ===========    ===========     ===========     ===========");
+        System.out.println("\u001B[33m                     ∥                        ∥     ∥                         ∥ ");
+        System.out.println("\u001B[33m                     ===========                    ===========                 ");
+        System.out.println("\u001B[33m                                   =============                   ============= ");
+        System.out.println("\u001B[33m                    =============                  =============                 ");
+        System.out.println("\u001B[33m                         ∥           ∥                   ∥           ∥          ");
+        System.out.println("\u001B[33m                         ∥           ===========         ∥           ===========");
+        System.out.println("\u001B[33m               ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
+        System.out.print("\u001B[0m");
         System.out.println("");
-        System.out.println("");
-        System.out.println("  ※※※※※※※※※※※※※※※※※※※※  오늘 메뉴는  ※※※※※※※※※※※※※※※※※※※※");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("     =============     ==============       =============     ============== ");
-        System.out.println("     ∥                              ∥      ∥                               ∥ ");
-        System.out.println("     ∥                              ∥      ∥                               ∥ ");
-        System.out.println("     =============                          =============                     ");
-        System.out.println("                     ==================                     ================== ");
-        System.out.println("    ===============                        ===============                     ");
-        System.out.println("           ∥            ∥                         ∥            ∥               ");
-        System.out.println("           ∥            ∥                         ∥            ∥               ");
-        System.out.println("           ∥            =============             ∥            =============  ");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("  ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("             ★★★★★★★★★★★★ " + "( " + st + " )" + " 당첨 ★★★★★★★★★★★★");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        op.mainmenu();
+        System.out.println("                         ★★★★★★★★★★★★ " + "( " + st + " )" + " 당첨 ★★★★★★★★★★★★");
+        do {
+            System.out.print("\u001B[0m        >" + " 1. 카테고리 다시 뽑기 <  ");
+            System.out.print("         >" + " 2. 메인으로 돌아가기 <   ");
+            System.out.println("        >" + " 3. 프로그램 종료 <  ");
+            System.out.print("                              \u001B[36m※ 필요한 메뉴가 있으면 위에서 골라주세요 ※ : ");
+            System.out.print("\u001B[0m");
+            int number = sc.nextInt();
+
+            if (number >= 4) {
+                System.out.print("                          \u001B[31m※ 메뉴에서 없는 번호를 선택하였음으로 프로그램 종료합니다 ※");
+                System.out.println("");
+                System.exit(0);
+            }
+            switch (number) {
+                case 1:
+                    categoryRandom();
+                    break;
+                case 2:
+                    op.mainmenu();
+                    break;
+                case 3:
+                    System.exit(0);
+                    break;
+            }
+        } while (number != 3);
     }
 }
+
 
