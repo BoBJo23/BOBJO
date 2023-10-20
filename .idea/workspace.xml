@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="메뉴입력후랜덤 만듬">
+    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="inji_finished">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,21 +57,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hi/Desktop/miniproject/BOBJO&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "last_opened_file_path": "C:/Users/hi/Desktop/miniproject/BOBJO",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵　 　　　　　　text　　　　　 ︵‿︵‿︵((ฅ)　(ฅ))︵‿︵‿︵ " />
+    </option>
+  </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bobjo.mini.run.Application" />
@@ -194,6 +202,7 @@
     <MESSAGE value="최종 틀틀" />
     <MESSAGE value="메뉴 오타 수정 및 추가" />
     <MESSAGE value="메뉴입력후랜덤 만듬" />
-    <option name="LAST_COMMIT_MESSAGE" value="메뉴입력후랜덤 만듬" />
+    <MESSAGE value="inji_finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="inji_finished" />
   </component>
 </project>
