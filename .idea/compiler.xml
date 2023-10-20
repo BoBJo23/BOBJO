@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="randomMenu" target="11" />
+      <module name="randomMenu.main" target="11" />
+      <module name="randomMenu.test" target="11" />
+      <module name="team_mini_project_BoBJo" target="11" />
+      <module name="team_mini_project_BoBJo.main" target="11" />
+      <module name="team_mini_project_BoBJo.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

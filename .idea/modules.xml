@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BOBJO.iml" filepath="$PROJECT_DIR$/.idea/BOBJO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/randomMenu.iml" filepath="$PROJECT_DIR$/.idea/modules/randomMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/randomMenu.main.iml" filepath="$PROJECT_DIR$/.idea/modules/randomMenu.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/randomMenu.test.iml" filepath="$PROJECT_DIR$/.idea/modules/randomMenu.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/team_mini_project_BoBJo.iml" filepath="$PROJECT_DIR$/.idea/modules/team_mini_project_BoBJo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/team_mini_project_BoBJo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/team_mini_project_BoBJo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/team_mini_project_BoBJo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/team_mini_project_BoBJo.test.iml" />
+    </modules>
+  </component>
+</project>
