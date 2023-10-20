@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="메뉴입력후랜덤 만듬">
+    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="3. 원하는 메뉴 직접 입력 후 랜덤  만듬!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +101,8 @@
       <list>
         <item itemvalue="Application.RandomFoodInput" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.RandomFoodInput" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +119,7 @@
       <workItem from="1697704630959" duration="17000" />
       <workItem from="1697705728674" duration="2106000" />
       <workItem from="1697778395347" duration="2570000" />
-      <workItem from="1697780986331" duration="1195000" />
+      <workItem from="1697780986331" duration="3046000" />
     </task>
     <task id="LOCAL-00001" summary="최종 틀">
       <option name="closed" value="true" />
@@ -183,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697781329957</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="3. 원하는 메뉴 직접 입력 후 랜덤  만듬!">
+      <option name="closed" value="true" />
+      <created>1697783216347</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697783216347</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +204,7 @@
     <MESSAGE value="최종 틀틀" />
     <MESSAGE value="메뉴 오타 수정 및 추가" />
     <MESSAGE value="메뉴입력후랜덤 만듬" />
-    <option name="LAST_COMMIT_MESSAGE" value="메뉴입력후랜덤 만듬" />
+    <MESSAGE value="3. 원하는 메뉴 직접 입력 후 랜덤  만듬!" />
+    <option name="LAST_COMMIT_MESSAGE" value="3. 원하는 메뉴 직접 입력 후 랜덤  만듬!" />
   </component>
 </project>
