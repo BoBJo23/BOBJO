@@ -10,6 +10,7 @@ public class Option {
     public void mainmenu() {
 
         int choice;
+        FoodData fd = FoodData.getInstance();
         do {
             System.out.println("\u001B[34m︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵\u001B[0m");
             System.out.println("      오늘 뭐 먹지?");
@@ -27,26 +28,22 @@ public class Option {
             System.out.print("번호를 입력해 주세요 : ");
             choice = sc.nextInt();
 
-            FoodData fd = new FoodData();
-            Category cg = new Category();
             MolppangRandom rd = new MolppangRandom();
             Dutchpay dp = new Dutchpay();
             RandomFoodInput rfi = new RandomFoodInput();
-            AddMenu am = new AddMenu();
 
             switch (choice){
                 case 1 :
                     System.out.println();
                     System.out.println("<전체 메뉴에서 랜덤 뽑기>");
                     System.out.println();
-                    RandomFromAll rfa = new RandomFromAll();
-                    rfa.allMenu();
+                    fd.randomFromAll();
 
                     break;
                 case 2 :
                     System.out.println();
                     System.out.println("<카테고리 선택 후 랜덤 메뉴 추천>");
-                    cg.categoryRandom();
+                    fd.categoryRandom();
                     break;
                 case 3 :
                     System.out.println();
@@ -67,13 +64,13 @@ public class Option {
                 case 6 :
                     System.out.println();
                     System.out.println("<전체 메뉴 보기>");
-                    fd.viewOfAllMenu();
+                    fd.viewAllmenu();
                     break;
 
                 case 7 :
                     System.out.println();
                     System.out.println("<직접 메뉴 추가하기>");
-                    am.addMenu();
+                    fd.addMenu();
                     break;
 
                 case 0 :
