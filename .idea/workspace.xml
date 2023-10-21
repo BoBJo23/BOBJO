@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="옵션꾸미기">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/AddMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/FoodData.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/FoodData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/run/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/run/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" afterDir="false" />
-    </list>
+    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="instance 사용하여 수정 및 1번 옵션에서 문자 혹은 문자열 입력 시 에러 발생이 아닌 옵션 선택으로 돌아가게 수정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +127,7 @@
       <workItem from="1697778395347" duration="2570000" />
       <workItem from="1697780986331" duration="1195000" />
       <workItem from="1697855070858" duration="1446000" />
-      <workItem from="1697856560212" duration="6900000" />
+      <workItem from="1697856560212" duration="7205000" />
     </task>
     <task id="LOCAL-00001" summary="최종 틀">
       <option name="closed" value="true" />
@@ -211,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697787796597</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="instance 사용하여 수정 및 1번 옵션에서 문자 혹은 문자열 입력 시 에러 발생이 아닌 옵션 선택으로 돌아가게 수정">
+      <option name="closed" value="true" />
+      <created>1697864842778</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697864842778</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +222,8 @@
     <MESSAGE value="메뉴입력후랜덤 만듬" />
     <MESSAGE value="inji_finished" />
     <MESSAGE value="옵션꾸미기" />
-    <option name="LAST_COMMIT_MESSAGE" value="옵션꾸미기" />
+    <MESSAGE value="instance 사용하여 수정 및 1번 옵션에서 문자 혹은 문자열 입력 시 에러 발생이 아닌 옵션 선택으로 돌아가게 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="instance 사용하여 수정 및 1번 옵션에서 문자 혹은 문자열 입력 시 에러 발생이 아닌 옵션 선택으로 돌아가게 수정" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BOBJO$Application.ic" NAME="Application Coverage Results" MODIFIED="1697860165595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
