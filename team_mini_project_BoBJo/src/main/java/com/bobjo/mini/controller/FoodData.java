@@ -109,6 +109,11 @@ public class FoodData {
             }
 
         } while (true);
+
+        if(previous.size() == mergedList.size()) {
+            System.out.println("원하시는 메뉴가 없으면 직접 추가해주세요.");
+            addMenu();
+        }
     }
 
         public void categoryRandom() {
