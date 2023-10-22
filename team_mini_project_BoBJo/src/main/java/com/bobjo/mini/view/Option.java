@@ -5,15 +5,14 @@ import com.bobjo.mini.controller.*;
 import java.util.Scanner;
 
 public class Option {
-
     Scanner sc = new Scanner(System.in);
-    public void mainmenu() {
 
+    public void mainmenu() {
         int choice;
         do {
             System.out.println("\u001B[34m︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵\u001B[0m");
             System.out.println("      오늘 뭐 먹지?");
-            System.out.println("\u001B[34m︵‿︵‿︵((ฅ)　(ฅ))︵‿︵‿︵\u001B[0m");
+            System.out.println("\u001B[34m︵‿︵‿︵((ฅ)  (ฅ))︵‿︵‿︵\u001B[0m");
             System.out.println("");
             System.out.println(" 1. 전체 메뉴에서 랜덤 뽑기");
             System.out.println(" 2. 카테고리 선택 후 랜덤 메뉴 추천");
@@ -34,58 +33,53 @@ public class Option {
             RandomFoodInput rfi = new RandomFoodInput();
             AddMenu am = new AddMenu();
 
-            switch (choice){
-                case 1 :
+            switch (choice) {
+                case 1:
                     System.out.println();
                     System.out.println("<전체 메뉴에서 랜덤 뽑기>");
                     System.out.println();
                     RandomFromAll rfa = new RandomFromAll();
                     rfa.allMenu();
-
                     break;
-                case 2 :
+                case 2:
                     System.out.println();
                     System.out.println("<카테고리 선택 후 랜덤 메뉴 추천>");
                     cg.categoryRandom();
                     break;
-                case 3 :
+                case 3:
                     System.out.println();
                     System.out.println("<메뉴 직접 입력 후 랜덤>");
                     rfi.FoodPeaker();
-
                     break;
-                case 4 :
+                case 4:
                     System.out.println();
                     System.out.println("<계산할 사람 고르기>");
                     rd.molppangRandom();
                     break;
-                case 5 :
+                case 5:
                     System.out.println();
                     System.out.println("<1/N 계산하기>");
                     dp.Dutchpay();
                     break;
-                case 6 :
+                case 6:
                     System.out.println();
                     System.out.println("<전체 메뉴 보기>");
-                    fd.viewOfAllMenu();
+                    fd.viewAllmenu();
                     break;
-
-                case 7 :
+                case 7:
                     System.out.println();
                     System.out.println("<직접 메뉴 추가하기>");
                     am.addMenu();
                     break;
-
-                case 0 :
+                case 0:
                     System.out.println();
                     System.out.println("<프로그램 종료>");
                     return;
                 default:
                     System.out.println();
-                    System.out.println("\u001B[31m유효하지 않은 선택지입니다.\u001B[0m");
-                    System.out.println("");
+                    System.out.println("\u001B[31m유효하지 않은 선택지입니다. 다시 선택해 주세요.\u001B[0m");
+                    break;
             }
-
-        }while(choice != 0);
+        } while (choice != 0);
     }
 }
