@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="inji_finished">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="옵션꾸미기">
+      <change afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/AddMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/FoodData.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/FoodData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,6 +111,8 @@
       <list>
         <item itemvalue="Application.RandomFoodInput" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.RandomFoodInput" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697781329957</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="옵션꾸미기">
+      <option name="closed" value="true" />
+      <created>1697787796597</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697787796597</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +215,7 @@
     <MESSAGE value="메뉴 오타 수정 및 추가" />
     <MESSAGE value="메뉴입력후랜덤 만듬" />
     <MESSAGE value="inji_finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="inji_finished" />
+    <MESSAGE value="옵션꾸미기" />
+    <option name="LAST_COMMIT_MESSAGE" value="옵션꾸미기" />
   </component>
 </project>
