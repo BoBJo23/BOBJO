@@ -1,6 +1,7 @@
 package com.bobjo.mini.controller;
 
 import com.bobjo.mini.model.dto.Food;
+import com.bobjo.mini.view.Option;
 
 import java.util.InputMismatchException;
 import java.util.List;
@@ -8,11 +9,11 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class AddMenu {
+public class AddMenu{
 
-    Food fd = new Food();
 
-    public void addMenu() {
+
+    public void addMenu(Food food) {
         Scanner sc = new Scanner(System.in);
         System.out.println("추가할 메뉴의 카테고리를 입력하세요.");
         System.out.println("1. 한식");
@@ -28,22 +29,22 @@ public class AddMenu {
 
             switch (categoryForNewMenu) {
                 case 1:
-                    fd.getKoreanMenu().add(newMenu);
+                    food.addKoreanList(newMenu);
                     System.out.println(newMenu + " 이(가) 추가되었습니다.");
                     break;
 
                 case 2:
-                    fd.getJapaneseMenu().add(newMenu);
+                    food.addJapaneseList(newMenu);
                     System.out.println(newMenu + " 이(가) 추가되었습니다.");
                     break;
 
                 case 3:
-                    fd.getWesternMenu().add(newMenu);
+                    food.addWesternList(newMenu);
                     System.out.println(newMenu + " 이(가) 추가되었습니다.");
                     break;
 
                 case 4:
-                    fd.getChineseMenu().add(newMenu);
+                    food.addChineseList(newMenu);
                     System.out.println(newMenu + " 이(가) 추가되었습니다.");
                     break;
 
