@@ -19,7 +19,7 @@ public class Category  {
         do {
 
             System.out.println("     \u001B[32m┌──────────────┐" + "     \u001B[31m┌──────────────┐" + "     \u001B[33m┌──────────────┐" + "     \u001B[34m┌──────────────┐" + "     \u001B[36m┌─────────────────┐");
-            System.out.println("     \u001B[32m│  1.　한  식   │" + "     \u001B[31m│  2.　일  식   │" + "　　 \u001B[33m│  3.  양　 식  │" + "　　　\u001B[34m│  4. 중 　식   │" + "     \u001B[36m│  5. 돌 아 가 기  │");
+            System.out.println("     \u001B[32m   1.　한  식    " + "     \u001B[31m   2. 일  식    " + "　　  \u001B[33m   3. 양　 식   " + "　　　\u001B[34m    4. 중 　식  　 " + "     \u001B[36m   5. 돌 아 가 기    ");
             System.out.println("     \u001B[32m└──────────────┘" + "     \u001B[31m└──────────────┘" + "     \u001B[33m└──────────────┘" + "     \u001B[34m└──────────────┘" + "     \u001B[36m└─────────────────┘");
             System.out.print("\u001B[0m");
             System.out.print("     ─────────────────────────────────  위의 카테고리 중 1개를 선택하세요  ───────────────────────────────── ▷" + " ");
@@ -86,11 +86,11 @@ public class Category  {
         System.out.println("\u001B[33m                 ────────────────────────────────────────────────────────────────────────");
         System.out.print("\u001B[0m");
         System.out.println("");
-        System.out.println("                         ★★★★★★★★★★★★ " + "( " + st + " )" + " 당첨 ★★★★★★★★★★★★");
         do {
             System.out.print("\u001B[0m        >" + " 1. 카테고리 다시 뽑기 <  ");
             System.out.print("         >" + " 2. 메인으로 돌아가기 <   ");
             System.out.println("        >" + " 3. 프로그램 종료 <  ");
+            System.out.println("");
             System.out.print("                              \u001B[36m※ 필요한 메뉴가 있으면 위에서 골라주세요 ※ : ");
             System.out.print("\u001B[0m");
 
@@ -99,23 +99,10 @@ public class Category  {
                 System.out.print("             \u001B[31m───────────────────────────── 올바른 숫자를 입력하세요 ─────────────────────────────");
                 System.out.println("\u001B[0m");
             } else {
+
+            }
                 int number = sc.nextInt();
 
-            if (number >= 4) {
-                System.out.print("                          \u001B[31m※ 메뉴에서 없는 번호를 선택하였음으로 프로그램 종료합니다 ※");
-                System.out.println("\u001B[0m");
-                System.exit(0);
-            }
-            switch (number) {
-                case 1:
-                    categoryRandom(food);
-                    break;
-                case 2:
-                    op.mainmenu(food);
-                    break;
-                case 3:
-                    System.exit(0);
-                    break;
                 if (number >= 4) {
                     System.out.print("                          \u001B[31m※ 메뉴에서 없는 번호를 선택하였음으로 프로그램 종료합니다 ※");
                     System.out.println("\u001B[0m");
@@ -136,17 +123,18 @@ public class Category  {
                     System.exit(0);
 
                 }
-                switch (number) {
-                    case 1:
-                        categoryRandom();
-                        break;
-                    case 2:
-                        op.mainmenu();
-                        break;
-                    case 3:
-                        System.exit(0);
-                        break;
-                }
+            switch (number) {
+                case 1:
+                    categoryRandom(food);
+                    break;
+                case 2:
+                    op.mainmenu(food);
+                    break;
+                case 3:
+                    System.exit(0);
+                    break;
+
+
             }
 
         } while (number == 3 || number == 2);

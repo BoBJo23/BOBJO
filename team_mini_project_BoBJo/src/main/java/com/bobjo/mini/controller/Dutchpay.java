@@ -33,7 +33,7 @@ public class Dutchpay {
 
                 if (money >= 0) {
                     int bboom = (money / people);
-                    System.out.println("총 인원 " + people + "명 금액 " + money + " 으로 나눈금액 " + bboom + "원 입니다.");
+                    System.out.println("총 인원 " + people + "명 금액 " + money + " 으로 나눈 금액 " + bboom + "원 입니다.");
                 }
                 break;
                 } else {
