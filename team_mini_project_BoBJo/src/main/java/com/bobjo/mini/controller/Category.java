@@ -1,17 +1,18 @@
 package com.bobjo.mini.controller;
 
+import com.bobjo.mini.model.dto.Food;
 import com.bobjo.mini.view.Option;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Category {
-    FoodData fd = new FoodData();
+public class Category  {
+
     Option op = new Option();
     Scanner sc = new Scanner(System.in);
     int categoryChoice;
 
-    public void categoryRandom() {
+    public void categoryRandom(Food food) {
 
         String Category;
 
@@ -35,27 +36,27 @@ public class Category {
             }
             Random random = new Random();
 
-            fd.foodlist();
+
             switch (categoryChoice) {
                 case 1: // 한식
-                    int randomIndexKorean = random.nextInt(fd.koreanList.size());
-                    Category = fd.koreanList.get(randomIndexKorean);
-                    next(Category);
+                    int randomIndexKorean = random.nextInt(food.getKoreanList().size());
+                    Category = food.getKoreanList().get(randomIndexKorean);
+                    next(Category , food);
                     break;
                 case 2: // 일식
-                    int randomIndexJapanese = random.nextInt(fd.japaneseList.size());
-                    Category = fd.japaneseList.get(randomIndexJapanese);
-                    next(Category);
+                    int randomIndexJapanese = random.nextInt(food.getJapaneseList().size());
+                    Category = food.getJapaneseList().get(randomIndexJapanese);
+                    next(Category , food);
                     break;
                 case 3: // 양식
-                    int randomIndexWestern = random.nextInt(fd.westernList.size());
-                    Category = fd.westernList.get(randomIndexWestern);
-                    next(Category);
+                    int randomIndexWestern = random.nextInt(food.getWesternList().size());
+                    Category = food.getWesternList().get(randomIndexWestern);
+                    next(Category , food);
                     break;
                 case 4: // 중식
-                    int randomIndexChinese = random.nextInt(fd.chineseList.size());
-                    Category = fd.chineseList.get(randomIndexChinese);
-                    next(Category);
+                    int randomIndexChinese = random.nextInt(food.getChineseList().size());
+                    Category = food.getChineseList().get(randomIndexChinese);
+                    next(Category , food);
                     break;
                 case 5: // 돌아가기
                     return;
@@ -69,7 +70,7 @@ public class Category {
 
     int number;
 
-    public void next(String st) {
+    public void next(String st , Food food) {
 
         System.out.println("\u001B[33m                 ─────────────────────────────  오늘 메뉴는  ─────────────────────────────");
         System.out.println("\u001B[33m                       ⣿⣿⣿⣿⣿⣿⣿⣿⣿    ⣿⣿⣿⣿⣿⣿⣿⣿⣿     ⣿⣿⣿⣿⣿⣿⣿⣿⣿     ⣿⣿⣿⣿⣿⣿⣿⣿⣿");
@@ -84,6 +85,8 @@ public class Category {
         System.out.println("                              ★★★★★★★★★★★★ " + "( " + st + " )" + " 당첨 ★★★★★★★★★★★★");
         System.out.println("\u001B[33m                 ────────────────────────────────────────────────────────────────────────");
         System.out.print("\u001B[0m");
+        System.out.println("");
+        System.out.println("                         ★★★★★★★★★★★★ " + "( " + st + " )" + " 당첨 ★★★★★★★★★★★★");
         do {
             System.out.print("\u001B[0m        >" + " 1. 카테고리 다시 뽑기 <  ");
             System.out.print("         >" + " 2. 메인으로 돌아가기 <   ");
@@ -98,6 +101,21 @@ public class Category {
             } else {
                 int number = sc.nextInt();
 
+            if (number >= 4) {
+                System.out.print("                          \u001B[31m※ 메뉴에서 없는 번호를 선택하였음으로 프로그램 종료합니다 ※");
+                System.out.println("\u001B[0m");
+                System.exit(0);
+            }
+            switch (number) {
+                case 1:
+                    categoryRandom(food);
+                    break;
+                case 2:
+                    op.mainmenu(food);
+                    break;
+                case 3:
+                    System.exit(0);
+                    break;
                 if (number >= 4) {
                     System.out.print("                          \u001B[31m※ 메뉴에서 없는 번호를 선택하였음으로 프로그램 종료합니다 ※");
                     System.out.println("\u001B[0m");
@@ -130,8 +148,7 @@ public class Category {
                         break;
                 }
             }
-        }    while (number != 3) ;
+
+        } while (number == 3 || number == 2);
     }
 }
-
-

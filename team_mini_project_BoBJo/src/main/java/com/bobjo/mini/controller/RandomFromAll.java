@@ -1,15 +1,16 @@
 package com.bobjo.mini.controller;
 
+import com.bobjo.mini.model.dto.Food;
 
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class RandomFromAll {
-    public void allMenu() {
-        FoodData fd = new FoodData();
-        fd.foodlist();
-        List<String> mergedList = Stream.of(fd.koreanList, fd.chineseList, fd.japaneseList, fd.westernList)
+    public void allMenu(Food food)  {
+
+
+        List<String> mergedList = Stream.of(food.getKoreanList(), food.getJapaneseList(), food.getWesternList(), food.getChineseList())
                 .flatMap(x -> x.stream())
                 .collect(Collectors.toList());
 
