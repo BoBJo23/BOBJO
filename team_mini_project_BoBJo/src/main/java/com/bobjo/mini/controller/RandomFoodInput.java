@@ -75,14 +75,16 @@ public class RandomFoodInput {
 
                         if (answer.equalsIgnoreCase("n")) {
                             keepChoosing = false;
+                        } else if (!answer.equalsIgnoreCase("예")) {
+                            System.out.println("예, 아니요를 입력해주세요.");
                         }
                     }
-                }
                 break;
-            }
+                }
 
             menuList.add(input);
-        }
+            }
 
+        }
     }
 }
