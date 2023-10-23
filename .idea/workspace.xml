@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="inji_finished">
-      <change afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/fontdelaytest.java" afterDir="false" />
+    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="옵션꾸미기">
+    <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="오류 수정 완">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFoodInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFoodInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/Food.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,22 +108,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="fontdelaytest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bobjo.mini.controller.fontdelaytest" />
-      <module name="team_mini_project_BoBJo.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bobjo.mini.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.fontdelaytest" />
+        <item itemvalue="Application.RandomFoodInput" />
+        <item itemvalue="Application.Application" />
         <item itemvalue="Application.RandomFoodInput" />
         <item itemvalue="Application.Application" />
       </list>
@@ -140,6 +131,7 @@
       <workItem from="1697705728674" duration="2106000" />
       <workItem from="1697778395347" duration="2570000" />
       <workItem from="1697780986331" duration="1195000" />
+      <workItem from="1698047375439" duration="1135000" />
     </task>
     <task id="LOCAL-00001" summary="최종 틀">
       <option name="closed" value="true" />
@@ -205,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697781329957</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="옵션꾸미기">
+      <option name="closed" value="true" />
+      <created>1697787796597</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697787796597</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +217,12 @@
     <MESSAGE value="메뉴 오타 수정 및 추가" />
     <MESSAGE value="메뉴입력후랜덤 만듬" />
     <MESSAGE value="inji_finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="inji_finished" />
+    <MESSAGE value="옵션꾸미기" />
+    <option name="LAST_COMMIT_MESSAGE" value="옵션꾸미기" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BOBJO$Application.ic" NAME="Application Coverage Results" MODIFIED="1697860165595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bobjo.mini.run.*</FILTER>
+    </SUITE>
   </component>
 </project>
