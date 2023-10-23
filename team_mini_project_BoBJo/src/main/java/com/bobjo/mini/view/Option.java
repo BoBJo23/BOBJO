@@ -52,7 +52,7 @@ public class Option {
                 case 3:
                     System.out.println();
                     System.out.println("<메뉴 직접 입력 후 랜덤>");
-                    rfi.FoodPeaker();
+                    rfi.FoodPicker();
                     break;
                 case 4:
                     System.out.println();
@@ -129,7 +129,7 @@ public class Option {
                 case 3:
                     System.out.println();
                     System.out.println("<메뉴 직접 입력 후 랜덤>");
-                    rfi.FoodPeaker();
+                    rfi.FoodPicker();
                     break;
                 case 4:
                     System.out.println();
