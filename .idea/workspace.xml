@@ -59,21 +59,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hi/Desktop/miniproject/BOBJO&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "last_opened_file_path": "C:/Users/hi/Desktop/miniproject/BOBJO",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵　 　　　　　　text　　　　　 ︵‿︵‿︵((ฅ)　(ฅ))︵‿︵‿︵ " />
+    </option>
+  </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bobjo.mini.run.Application" />
@@ -103,6 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RandomFoodInput" />
+        <item itemvalue="Application.Application" />
         <item itemvalue="Application.RandomFoodInput" />
         <item itemvalue="Application.Application" />
       </list>
@@ -187,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697781329957</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="옵션꾸미기">
+      <option name="closed" value="true" />
+      <created>1697787796597</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697787796597</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +214,8 @@
     <MESSAGE value="최종 틀틀" />
     <MESSAGE value="메뉴 오타 수정 및 추가" />
     <MESSAGE value="메뉴입력후랜덤 만듬" />
-    <option name="LAST_COMMIT_MESSAGE" value="메뉴입력후랜덤 만듬" />
+    <MESSAGE value="inji_finished" />
+    <MESSAGE value="옵션꾸미기" />
+    <option name="LAST_COMMIT_MESSAGE" value="옵션꾸미기" />
   </component>
 </project>
