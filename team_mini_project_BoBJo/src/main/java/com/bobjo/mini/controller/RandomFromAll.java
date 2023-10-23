@@ -1,6 +1,7 @@
 package com.bobjo.mini.controller;
 
 import com.bobjo.mini.model.dto.Food;
+import com.bobjo.mini.view.Option;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -35,8 +36,20 @@ public class RandomFromAll {
             System.out.print("입력 : ");
             answer = sc.nextInt();
 
+            if(answer == 1) {
+                break;
+            }
 
-        } while (answer == 2);
+            if(answer != 1 || answer != 2) {
+                System.out.println("유효하지 않은 선택입니다. 다시 골라주세요");
+                return;
+            }
+
+        } while (true);
+
+        if(previous.size() == mergedList.size()) {
+            System.out.println("원하시는 메뉴가 없으면 직접 추가해주세요.");
+        }
 
         //이걸로 결정할 건지 다시 뽑을 건지
 

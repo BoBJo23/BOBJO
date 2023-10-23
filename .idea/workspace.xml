@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="옵션꾸미기">
-      <change afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/AddMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/FoodData.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/FoodData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="inji" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,22 +57,22 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "android.gradle.sync.needed": "true",
-    "last_opened_file_path": "C:/Users/hi/Desktop/miniproject/BOBJO",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hi/Desktop/miniproject/BOBJO&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵　 　　　　　　text　　　　　 ︵‿︵‿︵((ฅ)　(ฅ))︵‿︵‿︵ " />
@@ -130,6 +128,7 @@
       <workItem from="1697705728674" duration="2106000" />
       <workItem from="1697778395347" duration="2570000" />
       <workItem from="1697780986331" duration="1195000" />
+      <workItem from="1698047375439" duration="1135000" />
     </task>
     <task id="LOCAL-00001" summary="최종 틀">
       <option name="closed" value="true" />
