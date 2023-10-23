@@ -10,7 +10,7 @@ public class RandomFoodInput {
         ArrayList<String> menuList = new ArrayList<>();
         Random random = new Random();
 
-        System.out.println(" ");
+        System.out.println("  ");
         System.out.println("음식 메뉴를 하나씩 입력하고 엔터를 눌러주세요!");
         System.out.println("(입력이 끝난 후 \"끝\" 을 입력하세요)");
         System.out.println("  ");
