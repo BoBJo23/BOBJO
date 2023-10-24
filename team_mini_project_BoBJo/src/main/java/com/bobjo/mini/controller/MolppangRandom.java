@@ -24,7 +24,7 @@ public class MolppangRandom {
             } else {
                 System.out.println("유효한 숫자를 입력해 주세요.");
                 scanner.nextLine();
-                   }
+            }
             } while (true);
 
         people = new String[number];
