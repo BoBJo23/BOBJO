@@ -43,12 +43,9 @@ public class FoodData {
             } else {
                 System.out.print(food.getJapaneseList().get(y) + "   ");
             }
-        }
 
-        if (count3 % 5 != 0) {
-            System.out.println();
         }
-
+        System.out.println();
         System.out.println("=============== 양식 ===============");
 
         for (int k = 0; k < food.getWesternList().size(); k++) {
@@ -58,10 +55,7 @@ public class FoodData {
             } else {
                 System.out.print(food.getWesternList().get(k) + "   ");
             }
-        }
 
-        if (count4 % 5 != 0) {
-            System.out.println();
         }
 
         System.out.println("=============== 중식 ===============");
@@ -80,5 +74,6 @@ public class FoodData {
         }
     }
 }
+
 
 
