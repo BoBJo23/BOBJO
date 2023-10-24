@@ -28,7 +28,7 @@ public class RandomFoodInput {
                     while (keepChoosing) {
                         int randomIndex = random.nextInt(menuList.size());
                         String selectedFood = menuList.get(randomIndex);
-                        String Loading = "LOADING....";
+                        String Loading = "LOADING.....";
 
                         for (int i = 0; i < Loading.length(); i++) {
                             System.out.print(Loading.charAt(i));
