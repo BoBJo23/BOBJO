@@ -1,4 +1,4 @@
-package com.bobjo.mini.controller;
+package com.bobjo.mini.service;
 
 
 

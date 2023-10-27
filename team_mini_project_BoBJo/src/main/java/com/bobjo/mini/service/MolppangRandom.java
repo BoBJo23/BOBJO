@@ -1,4 +1,4 @@
-package com.bobjo.mini.controller;
+package com.bobjo.mini.service;
 import java.util.Random;
 import java.util.Scanner;
 
