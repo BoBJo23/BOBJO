@@ -1,6 +1,5 @@
 package com.bobjo.mini.run;
-import com.bobjo.mini.model.dto.Food;
-import com.bobjo.mini.view.Option;
+import com.bobjo.mini.controller.Option;
 
 //        Food fd = new Food();
 //        fd.foodInput();
