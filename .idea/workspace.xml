@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee352737-e895-4332-a9c2-03df0701fd12" name="Changes" comment="옵션꾸미기">
-      <change afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/AddMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/common/JDBCTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/config/connection-info.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/mapper/menu-query.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/service/Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/FoodData.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/FoodData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/AddMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/service/AddMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/service/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/Dutchpay.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/service/Dutchpay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/FoodData.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/service/FoodData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/MolppangRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/service/MolppangRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFoodInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/service/RandomFoodInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/service/RandomFromAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dao/FoodDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dao/FoodDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/run/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/run/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/Option.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +56,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -63,18 +79,27 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "android.gradle.sync.needed": "true",
-    "last_opened_file_path": "C:/Users/hi/Desktop/miniproject/BOBJO",
+    "last_opened_file_path": "C:/dev/03_teamproject/real_mini_project/team_mini_project_BoBJo/src/main/java/com/bobjo/mini",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\03_teamproject\real_mini_project\team_mini_project_BoBJo\src\main\java\com\bobjo\mini" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵　 　　　　　　text　　　　　 ︵‿︵‿︵((ฅ)　(ฅ))︵‿︵‿︵ " />
@@ -95,11 +120,11 @@
       </method>
     </configuration>
     <configuration name="RandomFoodInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bobjo.mini.controller.RandomFoodInput" />
+      <option name="MAIN_CLASS_NAME" value="com.bobjo.mini.service.RandomFoodInput" />
       <module name="team_mini_project_BoBJo.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bobjo.mini.controller.*" />
+          <option name="PATTERN" value="com.bobjo.mini.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,6 +138,7 @@
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.RandomFoodInput" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.RandomFoodInput" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697787796597</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="수정1">
+      <option name="closed" value="true" />
+      <created>1698402584082</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698402584082</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +250,7 @@
     <MESSAGE value="메뉴입력후랜덤 만듬" />
     <MESSAGE value="inji_finished" />
     <MESSAGE value="옵션꾸미기" />
-    <option name="LAST_COMMIT_MESSAGE" value="옵션꾸미기" />
+    <MESSAGE value="수정1" />
+    <option name="LAST_COMMIT_MESSAGE" value="수정1" />
   </component>
 </project>
