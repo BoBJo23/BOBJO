@@ -7,6 +7,13 @@
                 A.menuName
         FROM    tbl_menu A
     </entry>
+    <entry key="addMenu">
+        INSERT
+        INTO
+        tbl_menu(menuNum, menuName, categoryNum)
+        VALUES
+        (?, ?, ?)
+    </entry>
 
 
 

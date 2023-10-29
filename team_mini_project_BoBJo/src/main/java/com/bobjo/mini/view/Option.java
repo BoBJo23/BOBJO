@@ -12,7 +12,6 @@ public class Option {
     private Controller controller = new Controller();
 
 
-
     public void mainmenu() {
         List<Food> foodList = new ArrayList<>();
         int choice;
@@ -81,7 +80,7 @@ public class Option {
                 case 7:
                     System.out.println();
                     System.out.println("<직접 메뉴 추가하기>");
-
+                    controller.addMenu();
                     break;
                 case 0:
                     System.out.println();

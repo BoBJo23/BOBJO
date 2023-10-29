@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+import static com.bobjo.mini.common.JDBCTemplate.close;
+
 public class FoodDAO {
     private Properties prop = new Properties();
 
@@ -53,9 +55,37 @@ public class FoodDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-            JDBCTemplate.close(rset);
-            JDBCTemplate.close(pstmt);
+            close(rset);
+            close(pstmt);
         }
     return foodList;
+    }
+
+    public int addMenu(Connection con, String menuName, int categoryNum) {
+        PreparedStatement pstmt = null;
+        int result = 0;
+
+
+        String query = prop.getProperty("addMenu");
+
+        try {
+            pstmt = con.prepareStatement(query);
+            pstmt.setString(1, null);
+            pstmt.setString(2, menuName);
+            pstmt.setInt(3, categoryNum);
+
+            result = pstmt.executeUpdate();
+
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            close(pstmt);
+
+        }
+        return result;
+
+
     }
 }
