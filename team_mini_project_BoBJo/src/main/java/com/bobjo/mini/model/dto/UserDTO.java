@@ -2,21 +2,22 @@ package com.bobjo.mini.model.dto;
 
 public class UserDTO implements java.io.Serializable{
 
+
     private int age;
-
     private int userNum;
-
+    private String userName;
     private char gender;
     private int menuNum;
 
     public UserDTO() {
     }
 
-    public UserDTO(int age, int userNum, char gender, int menuNum) {
+    public UserDTO(int age, int userNum, char gender, int menuNum,String userName) {
         this.age = age;
         this.userNum = userNum;
         this.gender = gender;
         this.menuNum = menuNum;
+        this.userName = userName;
     }
 
     public int getAge() {
@@ -51,6 +52,14 @@ public class UserDTO implements java.io.Serializable{
         this.menuNum = menuNum;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
     @Override
     public String toString() {
         return "UserDTO{" +
@@ -58,6 +67,7 @@ public class UserDTO implements java.io.Serializable{
                 ", userNum=" + userNum +
                 ", gender=" + gender +
                 ", menuNum=" + menuNum +
+                ", userName=" + userName+
                 '}';
     }
 }
