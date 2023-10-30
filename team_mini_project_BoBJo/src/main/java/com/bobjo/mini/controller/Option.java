@@ -41,7 +41,7 @@ public class Option {
             System.out.println(" 7. 직접 메뉴 추가하기");
             System.out.println(" 0. 프로그램 종료");
             System.out.println(" ");
-            System.out.print("번호를 입력해 주세요 : ");
+            System.out.print("번호를 입력해 주세요 :  ");
             choice = sc.nextInt();
 
             AllMenu fd = new AllMenu();
