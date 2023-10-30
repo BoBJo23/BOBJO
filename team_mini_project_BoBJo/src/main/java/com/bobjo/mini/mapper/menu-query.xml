@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment/>
+    <entry key="selectAllMenu">
+        SELECT  A.menuNum,
+                A.menuName
+        FROM    tbl_menu A
+    </entry>
+    <entry key="addMenu">
+        INSERT
+        INTO
+        tbl_menu(menuNum, menuName, categoryNum)
+        VALUES
+        (?, ?, ?)
+    </entry>
+
+
+
+
+</properties>
