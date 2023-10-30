@@ -15,7 +15,9 @@
         (?, ?, ?)
     </entry>
 
-
-
-
+    <entry key="category">
+        SELECT  A.menuName
+                A.categoryNum
+        FROM    tbl_mane A
+    </entry>
 </properties>

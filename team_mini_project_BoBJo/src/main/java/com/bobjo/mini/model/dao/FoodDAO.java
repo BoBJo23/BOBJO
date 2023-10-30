@@ -26,9 +26,7 @@ public class FoodDAO {
             e.printStackTrace();
         }
 
-
     }
-
 
     public List<Food> selectAllMenu(Connection con) {
         PreparedStatement pstmt = null;
@@ -85,7 +83,36 @@ public class FoodDAO {
 
         }
         return result;
+    }
 
+    public  List<Food> category(Connection con) {
+        PreparedStatement pstmt = null;
+        ResultSet rset = null;
 
+        List<Food> categoryList = null;
+
+        String query = prop.getProperty("category");
+
+        try {
+            pstmt = con.prepareStatement(query);
+            rset = pstmt.executeQuery();
+
+            categoryList = new ArrayList<>();
+
+            while (rset.next()){
+
+                Food food = new Food();
+                food.setMenuName(rset.getString("menuName"));
+                food.setCategoryNum(rset.getInt("categoryNum"));
+
+                categoryList.add(food);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            close(rset);
+            close(pstmt);
+        }
+        return categoryList;
     }
 }

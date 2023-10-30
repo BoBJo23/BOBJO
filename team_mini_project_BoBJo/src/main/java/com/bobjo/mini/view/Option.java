@@ -53,6 +53,7 @@ public class Option {
                 case 2:
                     System.out.println();
                     System.out.println("<카테고리 선택 후 랜덤 메뉴 추천>");
+                    controller.category();
 
                     break;
                 case 3:
