@@ -47,8 +47,7 @@ public class Option {
                     System.out.println();
                     System.out.println("<전체 메뉴에서 랜덤 뽑기>");
                     System.out.println();
-                    RandomFromAll rfa = new RandomFromAll();
-
+                    controller.randomFromAll();
                     break;
                 case 2:
                     System.out.println();
@@ -74,8 +73,6 @@ public class Option {
                     System.out.println();
                     System.out.println("<전체 메뉴 보기>");
                     controller.allMenu();
-
-
                     break;
                 case 7:
                     System.out.println();
