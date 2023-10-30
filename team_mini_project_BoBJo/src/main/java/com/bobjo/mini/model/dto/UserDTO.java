@@ -1,23 +1,14 @@
 package com.bobjo.mini.model.dto;
 
-public class UserDTO implements java.io.Serializable{
+public class UserDTO implements java.io.Serializable {
 
 
     private int age;
-    private int userNum;
+    private Integer userNum;
     private String userName;
     private char gender;
-    private int menuNum;
 
     public UserDTO() {
-    }
-
-    public UserDTO(int age, int userNum, char gender, int menuNum,String userName) {
-        this.age = age;
-        this.userNum = userNum;
-        this.gender = gender;
-        this.menuNum = menuNum;
-        this.userName = userName;
     }
 
     public int getAge() {
@@ -28,28 +19,12 @@ public class UserDTO implements java.io.Serializable{
         this.age = age;
     }
 
-    public int getUserNum() {
+    public Integer getUserNum() {
         return userNum;
     }
 
-    public void setUserNum(int userNum) {
+    public void setUserNum(Integer userNum) {
         this.userNum = userNum;
-    }
-
-    public char getGender() {
-        return gender;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
-    }
-
-    public int getMenuNum() {
-        return menuNum;
-    }
-
-    public void setMenuNum(int menuNum) {
-        this.menuNum = menuNum;
     }
 
     public String getUserName() {
@@ -60,14 +35,30 @@ public class UserDTO implements java.io.Serializable{
         this.userName = userName;
     }
 
+    public char getGender() {
+        return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+    public UserDTO(int age, Integer userNum, String userName, char gender) {
+        this.age = age;
+        this.userNum = userNum;
+        this.userName = userName;
+        this.gender = gender;
+
+
+    }
+
     @Override
     public String toString() {
         return "UserDTO{" +
                 "age=" + age +
                 ", userNum=" + userNum +
+                ", userName='" + userName + '\'' +
                 ", gender=" + gender +
-                ", menuNum=" + menuNum +
-                ", userName=" + userName+
                 '}';
     }
 }
