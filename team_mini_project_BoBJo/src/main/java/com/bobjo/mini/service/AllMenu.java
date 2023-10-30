@@ -38,7 +38,7 @@ public class AllMenu {
             }
         }
         System.out.println();
-        System.out.println("=======================일식=========================");
+        System.out.println("======================= 일식 =========================");
         for (Food fd : foodList) {
             if (fd.getCategoryNum() == 2) {
                 System.out.print(fd.getMenuName() + " ");
@@ -50,7 +50,7 @@ public class AllMenu {
             }
         }
             System.out.println();
-            System.out.println("=======================중식=========================");
+            System.out.println("======================= 중식 =========================");
             for (Food fd : foodList) {
 
                 if (fd.getCategoryNum() == 3) {
@@ -62,7 +62,7 @@ public class AllMenu {
                 }
             }
                 System.out.println();
-                System.out.println("=======================양식=========================");
+                System.out.println("======================= 양식 =========================");
                 for (Food fd : foodList) {
 
                     if (fd.getCategoryNum() == 4) {
@@ -77,7 +77,8 @@ public class AllMenu {
 
 
                 }
-                    close(con);
+        System.out.println();
+        close(con);
     }
 }
 
