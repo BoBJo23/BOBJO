@@ -33,7 +33,7 @@ public class Option {
             System.out.println("\u001B[34m︵‿︵‿︵((ฅ)  (ฅ))︵‿︵‿︵\u001B[0m");
             System.out.println(" ");
             System.out.println(" 1. 전체 메뉴에서 랜덤 뽑기");
-            System.out.println(" 2. 카테고리 선택 후 랜덤 메뉴 추천");
+            System.out.println(" 2. 카테고리 선택 후 랜덤 메뉴 추천 ");
             System.out.println(" 3. 메뉴 직접 입력 후 랜덤");
             System.out.println(" 4. 계산할 사람 고르기");
             System.out.println(" 5. 1/N 계산하기");
