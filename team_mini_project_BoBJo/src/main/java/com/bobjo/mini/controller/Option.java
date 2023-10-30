@@ -1,7 +1,7 @@
-package com.bobjo.mini.view;
+package com.bobjo.mini.controller;
 
-import com.bobjo.mini.controller.*;
 import com.bobjo.mini.model.dto.Food;
+import com.bobjo.mini.service.*;
 
 import java.util.Scanner;
 
