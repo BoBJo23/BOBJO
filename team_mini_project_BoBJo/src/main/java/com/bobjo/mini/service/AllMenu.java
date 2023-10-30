@@ -77,7 +77,7 @@ public class AllMenu {
 
 
                 }
-        System.out.println();
+        System.out.println("");
         close(con);
     }
 }
