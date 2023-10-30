@@ -19,9 +19,9 @@ public class AddMenu{
 
         Scanner sc = new Scanner(System.in);
 
+        Connection con = getConnection();
 
         try {
-        Connection con = getConnection();
 
         System.out.println("추가할 메뉴의 카테고리를 입력하세요.");
         System.out.println("1. 한식");
