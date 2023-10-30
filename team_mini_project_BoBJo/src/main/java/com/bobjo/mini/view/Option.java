@@ -2,14 +2,28 @@ package com.bobjo.mini.view;
 
 import com.bobjo.mini.controller.*;
 import com.bobjo.mini.model.dto.Food;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
 
 public class Option {
     Scanner sc = new Scanner(System.in);
+
+    User user = new User();
     Food food = new Food();
 
+
     public void mainmenu() {
+
+        System.out.println("=======회원등록=======");
+        System.out.print("나이를 입력하세요 : ");
+        int age = sc.nextInt();
+        sc.nextLine();
+        System.out.print("성별을 입력하세요 : ");
+        char gender = sc.nextLine().charAt(0);
+
+
+
         int choice;
 
         do {
