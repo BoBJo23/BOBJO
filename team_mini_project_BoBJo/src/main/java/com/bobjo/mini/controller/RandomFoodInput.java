@@ -5,7 +5,8 @@ import java.util.Random;
 import java.util.ArrayList;
 
 public class RandomFoodInput {
-    public void FoodPicker() {
+    public void FoodPicker() {        //음식 메뉴를 입력하고 무작위로 선택하여 오늘의 메뉴를 결정.
+                                      //메뉴를 입력하고 선택하는 과정을 관리.
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> menuList = new ArrayList<>();
         Random random = new Random();
