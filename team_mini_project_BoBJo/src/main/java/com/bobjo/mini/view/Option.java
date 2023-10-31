@@ -33,12 +33,9 @@ public class Option {
             System.out.print("번호를 입력해 주세요 : ");
             choice = sc.nextInt();
 
-            AllMenu fd = new AllMenu();
-            CategoryService cg = new CategoryService();
             MolppangRandom rd = new MolppangRandom();
             Dutchpay dp = new Dutchpay();
             RandomFoodInput rfi = new RandomFoodInput();
-            AddMenu am = new AddMenu();
 
             switch (choice) {
                 case 1:
@@ -57,7 +54,7 @@ public class Option {
                 case 3:
                     System.out.println();
                     System.out.println("<메뉴 직접 입력 후 랜덤>");
-//                    rfi.FoodPeaker(); 수정필요
+                    rfi.FoodPicker();
                     break;
                 case 4:
                     System.out.println();
@@ -122,11 +119,7 @@ public class Option {
 //            for (Food f : categoryByCodeList) {
 //                System.out.println(f);
 //            }
-//
-//
 //            System.out.println("========================================");
-
-
 
             switch (categoryChoice) {
 
