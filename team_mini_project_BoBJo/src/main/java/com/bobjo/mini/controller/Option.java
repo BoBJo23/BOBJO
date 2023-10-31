@@ -21,20 +21,24 @@ public class Option {
     public void mainmenu() {
 
 
+        System.out.println("\u001B[34m︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵\u001B[0m");
+        System.out.println("      오늘 뭐 먹지?");
+        System.out.println("\u001B[34m︵‿︵‿︵((ฅ)  (ฅ))︵‿︵‿︵\u001B[0m");
+
+
         Scanner sc = new Scanner(System.in);
 
         controller.userInfo();
 
 
-        List<Food> foodList = new ArrayList<>();
         int choice;
 
 
         do {
-            System.out.println("\u001B[34m︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵\u001B[0m");
-            System.out.println("      오늘 뭐 먹지?");
-            System.out.println("\u001B[34m︵‿︵‿︵((ฅ)  (ฅ))︵‿︵‿︵\u001B[0m");
-            System.out.println(" ");
+
+            System.out.println("\u001B[31m    ┌--------------┐\u001B[0m");
+            System.out.println("          MENU    ");
+            System.out.println("\u001B[31m    └--------------┘\u001B[0m");
             System.out.println(" 1. 전체 메뉴에서 랜덤 뽑기");
             System.out.println(" 2. 카테고리 선택 후 랜덤 메뉴 추천 ");
             System.out.println(" 3. 메뉴 직접 입력 후 랜덤");
@@ -47,12 +51,11 @@ public class Option {
             System.out.print("번호를 입력해 주세요 :  ");
             choice = sc.nextInt();
 
-            AllMenu fd = new AllMenu();
-            Category cg = new Category();
+
             MolppangRandom rd = new MolppangRandom();
             Dutchpay dp = new Dutchpay();
             RandomFoodInput rfi = new RandomFoodInput();
-            AddMenu am = new AddMenu();
+
 
             switch (choice) {
                 case 1:
