@@ -20,10 +20,8 @@ public class Option {
 
     public void mainmenu() {
 
-        int choice;
-        Scanner sc = new Scanner(System.in);
 
-
+        System.out.println(" ");
         System.out.println("\u001B[34m︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵\u001B[0m");
         System.out.println("      오늘 뭐 먹지?");
         System.out.println("\u001B[34m︵‿︵‿︵((ฅ)  (ฅ))︵‿︵‿︵\u001B[0m");
