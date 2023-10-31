@@ -5,7 +5,7 @@ import com.bobjo.mini.model.dao.UserDAO;
 import java.sql.Connection;
 import java.util.Scanner;
 
-import static com.bobjo.mini.JDBCTemplate.JDBCTemplate.getConnection;
+import static com.bobjo.mini.common.JDBCTemplate.getConnection;
 
 public class UserInfo  {
 

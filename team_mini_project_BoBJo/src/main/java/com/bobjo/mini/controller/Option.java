@@ -3,9 +3,9 @@ package com.bobjo.mini.controller;
 
 import com.bobjo.mini.model.dto.*;
 import com.bobjo.mini.service.*;
-=========
+
 import org.w3c.dom.ls.LSOutput;
->>>>>>>>> Temporary merge branch 2:team_mini_project_BoBJo/src/main/java/com/bobjo/mini/view/Option.java
+
 
 import java.util.ArrayList;
 import java.util.List;

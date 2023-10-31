@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
 
-import static com.bobjo.mini.JDBCTemplate.JDBCTemplate.close;
+import static com.bobjo.mini.common.JDBCTemplate.close;
 
 public class UserDAO {
     private Properties Prop = new Properties();
