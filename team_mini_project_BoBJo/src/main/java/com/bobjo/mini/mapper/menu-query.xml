@@ -17,6 +17,15 @@
         VALUES
         (?, ?, ?)
     </entry>
+    <entry key="userInfo">
+        INSERT
+        INTO
+        tbl_user(userNum,userName,gender,age)
+        VALUES
+        (?, ?, ?, ?)
+
+    </entry>
+
 
 
     <entry key="category">
