@@ -1,0 +1,122 @@
+Index: team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/Food.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.bobjo.mini.model.dto;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class Food {\r\n\r\n//    private List<String> chineseList = new ArrayList<>(List.of(\"짜장면\", \"짬뽕\", \"탕수육\", \"우육면\",\"양장피\", \"마파두부\",  \"중식볶음밥\", \"마라탕\", \"마라샹궈\", \"꿔바로우\", \"지삼선\", \"꽁바오지띵\",\"훠궈\", \"만두\", \"차오미엔\"));\r\n    private List<String> chineseList = new ArrayList<>(List.of(\"짜장면\"));\r\n//    private List<String> japaneseList = new ArrayList<>(List.of(\"스시\", \"라멘\", \"돈카츠\", \"우동\", \"회\", \"알밥\", \"야키토리(닭꼬치구이)\", \"오코노미야끼\", \"타코야끼\", \"야키니쿠\", \"샤브샤브\", \"밀푀유나베\", \"오니기리\", \"돈부리\",\"우동\",\"텐동\"));\r\n    private List<String> japaneseList = new ArrayList<>(List.of(\"스시\"));\r\n//    private List<String> westernList = new ArrayList<>(List.of(\"치킨 키예프\", \"피자\", \"소고기 스테이크\", \"토마토 파스타\",\"알리오 올리오\",\"크림 파스타\", \"해물 파스타\", \"햄버거\", \"봉골레 스파게티\", \"랍스터 비스크\", \" 피쉬 앤 칩스\", \"비프 타코\", \"바베큐\", \"치킨 마살라\", \"에그 베네딕트\"));\r\n    private List<String> westernList = new ArrayList<>(List.of(\"치킨 키예프\"));\r\n//    private List<String> koreanList = new ArrayList<>(List.of(\"비빔밥\", \"김밥\",\"육회\",\"불고기\", \"김치찌개\", \"된장찌개\", \"순두부찌개\", \"떡볶이\", \"닭갈비\", \"치킨\", \"육개장\", \"돌솥비빔밥\",\"돈까스\", \"삼겹살\", \"갈비\",\"쭈꾸미 볶음\",\"순대국밥\",\"설렁탕\", \"고기국밥\", \"뼈해장국\", \"철판볶음밥\", \"보쌈\", \"낙지볶음밥\", \"오므라이스\", \"국수\"));\r\n    private List<String> koreanList = new ArrayList<>(List.of(\"비빔밥\"));\r\n\r\n\r\n    public Food() {\r\n    }\r\n\r\n    public List<String> getChineseList() {\r\n        return chineseList;\r\n    }\r\n\r\n    public List<String> getJapaneseList() {\r\n        return japaneseList;\r\n    }\r\n\r\n    public List<String> getWesternList() {\r\n        return westernList;\r\n    }\r\n\r\n    public List<String> getKoreanList() {\r\n        return koreanList;\r\n    }\r\n\r\n    public void addChineseList(String chineseList) {\r\n        this.chineseList.add(chineseList);\r\n    }\r\n\r\n    public void addJapaneseList(String japaneseList) {\r\n        this.japaneseList.add(japaneseList);\r\n    }\r\n\r\n    public void addWesternList(String westernList) {\r\n        this.westernList.add(westernList);\r\n    }\r\n\r\n    public void addKoreanList(String koreanList) {\r\n        this.koreanList.add(koreanList);\r\n    }\r\n\r\n    public String randommenuch(int catecogy , int num ) {\r\n        if (catecogy == 1) {\r\n            return chineseList.get(num);\r\n        }else if (catecogy == 2){\r\n            return japaneseList.get(num);\r\n        }\r\n        else return \"sorry\";\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/Food.java b/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/Food.java
+--- a/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/Food.java	(revision 6bc0ef4d9a8dc8b92f82d4bf6e4c298b48818f2c)
++++ b/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/Food.java	(date 1698402505041)
+@@ -5,58 +5,11 @@
+ 
+ public class Food {
+ 
+-//    private List<String> chineseList = new ArrayList<>(List.of("짜장면", "짬뽕", "탕수육", "우육면","양장피", "마파두부",  "중식볶음밥", "마라탕", "마라샹궈", "꿔바로우", "지삼선", "꽁바오지띵","훠궈", "만두", "차오미엔"));
+-    private List<String> chineseList = new ArrayList<>(List.of("짜장면"));
+-//    private List<String> japaneseList = new ArrayList<>(List.of("스시", "라멘", "돈카츠", "우동", "회", "알밥", "야키토리(닭꼬치구이)", "오코노미야끼", "타코야끼", "야키니쿠", "샤브샤브", "밀푀유나베", "오니기리", "돈부리","우동","텐동"));
+-    private List<String> japaneseList = new ArrayList<>(List.of("스시"));
+-//    private List<String> westernList = new ArrayList<>(List.of("치킨 키예프", "피자", "소고기 스테이크", "토마토 파스타","알리오 올리오","크림 파스타", "해물 파스타", "햄버거", "봉골레 스파게티", "랍스터 비스크", " 피쉬 앤 칩스", "비프 타코", "바베큐", "치킨 마살라", "에그 베네딕트"));
+-    private List<String> westernList = new ArrayList<>(List.of("치킨 키예프"));
+-//    private List<String> koreanList = new ArrayList<>(List.of("비빔밥", "김밥","육회","불고기", "김치찌개", "된장찌개", "순두부찌개", "떡볶이", "닭갈비", "치킨", "육개장", "돌솥비빔밥","돈까스", "삼겹살", "갈비","쭈꾸미 볶음","순대국밥","설렁탕", "고기국밥", "뼈해장국", "철판볶음밥", "보쌈", "낙지볶음밥", "오므라이스", "국수"));
+-    private List<String> koreanList = new ArrayList<>(List.of("비빔밥"));
+-
+ 
+-    public Food() {
+-    }
+ 
+-    public List<String> getChineseList() {
+-        return chineseList;
+-    }
+ 
+-    public List<String> getJapaneseList() {
+-        return japaneseList;
+-    }
+ 
+-    public List<String> getWesternList() {
+-        return westernList;
+-    }
+ 
+-    public List<String> getKoreanList() {
+-        return koreanList;
+-    }
+ 
+-    public void addChineseList(String chineseList) {
+-        this.chineseList.add(chineseList);
+-    }
+-
+-    public void addJapaneseList(String japaneseList) {
+-        this.japaneseList.add(japaneseList);
+-    }
+-
+-    public void addWesternList(String westernList) {
+-        this.westernList.add(westernList);
+-    }
+-
+-    public void addKoreanList(String koreanList) {
+-        this.koreanList.add(koreanList);
+-    }
+-
+-    public String randommenuch(int catecogy , int num ) {
+-        if (catecogy == 1) {
+-            return chineseList.get(num);
+-        }else if (catecogy == 2){
+-            return japaneseList.get(num);
+-        }
+-        else return "sorry";
+-    }
+ 
+ }
+Index: team_mini_project_BoBJo/src/main/java/com/bobjo/mini/run/Application.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.bobjo.mini.run;\r\nimport com.bobjo.mini.controller.Option;\r\n\r\n//        Food fd = new Food();\r\n//        fd.foodInput();\r\npublic class Application {\r\n\r\n    public static void main(String[] args) {\r\n\r\n\r\n\r\n\r\n        Option fm = new Option();\r\n        fm.mainmenu();\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/run/Application.java b/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/run/Application.java
+--- a/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/run/Application.java	(revision 6bc0ef4d9a8dc8b92f82d4bf6e4c298b48818f2c)
++++ b/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/run/Application.java	(date 1698400577363)
+@@ -10,6 +10,7 @@
+ 
+ 
+ 
++
+         Option fm = new Option();
+         fm.mainmenu();
+ 
+Index: team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dao/FoodDAO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dao/FoodDAO.java b/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dao/FoodDAO.java
+new file mode 100644
+--- /dev/null	(date 1698402505033)
++++ b/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dao/FoodDAO.java	(date 1698402505033)
+@@ -0,0 +1,4 @@
++package com.bobjo.mini.model.dao;
++
++public class FoodDAO {
++}
+Index: team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/UserDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/UserDTO.java b/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/UserDTO.java
+new file mode 100644
+--- /dev/null	(date 1698402505024)
++++ b/team_mini_project_BoBJo/src/main/java/com/bobjo/mini/model/dto/UserDTO.java	(date 1698402505024)
+@@ -0,0 +1,11 @@
++package com.bobjo.mini.model.dto;
++
++public class UserDTO {
++
++    private int age;
++
++    private int userNum;
++
++    private char gender;
++    private int menuNum
++}
