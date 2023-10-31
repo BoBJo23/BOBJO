@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="@mysql.coffit.today" uuid="dfc20b21-b438-481d-9bbf-5b46fc6a9345">
     <data-source source="LOCAL" name="food@mysql.coffit.today" uuid="0de4929d-2a5f-442c-8f01-cc96306dc256">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
