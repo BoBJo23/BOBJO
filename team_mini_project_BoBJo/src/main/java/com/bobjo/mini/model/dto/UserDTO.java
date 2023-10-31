@@ -1,22 +1,14 @@
 package com.bobjo.mini.model.dto;
 
-public class UserDTO implements java.io.Serializable{
+public class UserDTO implements java.io.Serializable {
+
 
     private int age;
-
-    private int userNum;
-
+    private Integer userNum;
+    private String userName;
     private char gender;
-    private int menuNum;
 
     public UserDTO() {
-    }
-
-    public UserDTO(int age, int userNum, char gender, int menuNum) {
-        this.age = age;
-        this.userNum = userNum;
-        this.gender = gender;
-        this.menuNum = menuNum;
     }
 
     public int getAge() {
@@ -27,12 +19,20 @@ public class UserDTO implements java.io.Serializable{
         this.age = age;
     }
 
-    public int getUserNum() {
+    public Integer getUserNum() {
         return userNum;
     }
 
-    public void setUserNum(int userNum) {
+    public void setUserNum(Integer userNum) {
         this.userNum = userNum;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public char getGender() {
@@ -43,12 +43,13 @@ public class UserDTO implements java.io.Serializable{
         this.gender = gender;
     }
 
-    public int getMenuNum() {
-        return menuNum;
-    }
+    public UserDTO(int age, Integer userNum, String userName, char gender) {
+        this.age = age;
+        this.userNum = userNum;
+        this.userName = userName;
+        this.gender = gender;
 
-    public void setMenuNum(int menuNum) {
-        this.menuNum = menuNum;
+
     }
 
     @Override
@@ -56,8 +57,8 @@ public class UserDTO implements java.io.Serializable{
         return "UserDTO{" +
                 "age=" + age +
                 ", userNum=" + userNum +
+                ", userName='" + userName + '\'' +
                 ", gender=" + gender +
-                ", menuNum=" + menuNum +
                 '}';
     }
 }
