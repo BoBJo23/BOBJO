@@ -13,7 +13,7 @@ public class Option {
 
 
     public void mainmenu() {
-        List<Food> foodList = new ArrayList<>();
+
         int choice;
         Scanner sc = new Scanner(System.in);
 
@@ -35,12 +35,11 @@ public class Option {
             System.out.print("번호를 입력해 주세요 : ");
             choice = sc.nextInt();
 
-            AllMenu fd = new AllMenu();
-            Category cg = new Category();
+
             MolppangRandom rd = new MolppangRandom();
             Dutchpay dp = new Dutchpay();
             RandomFoodInput rfi = new RandomFoodInput();
-            AddMenu am = new AddMenu();
+
 
             switch (choice) {
                 case 1:
