@@ -8,6 +8,8 @@
                 A.categoryNum
         FROM    tbl_menu A
     </entry>
+
+
     <entry key="addMenu">
         INSERT
         INTO
@@ -16,9 +18,17 @@
         (?, ?, ?)
     </entry>
 
+
     <entry key="category">
-        SELECT  A.menuName
+        SELECT  A.categoryNum,
+                A.categoryName
+        FROM    tbl_category A
+    </entry>
+    <entry key="categoryByCode">
+        SELECT  A.menuNum,
+                A.menuName,
                 A.categoryNum
-        FROM    tbl_mane A
+        FROM    tbl_menu A
+        WHERE A.categoryNum = ?
     </entry>
 </properties>

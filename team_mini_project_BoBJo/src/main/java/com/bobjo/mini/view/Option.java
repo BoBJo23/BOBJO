@@ -1,6 +1,7 @@
 package com.bobjo.mini.view;
 
 import com.bobjo.mini.controller.Controller;
+import com.bobjo.mini.model.dto.CategoryDTO;
 import com.bobjo.mini.model.dto.Food;
 import com.bobjo.mini.service.*;
 
@@ -11,12 +12,9 @@ import java.util.Scanner;
 public class Option {
     private Controller controller = new Controller();
 
-
     public void mainmenu() {
-        List<Food> foodList = new ArrayList<>();
         int choice;
         Scanner sc = new Scanner(System.in);
-
 
         do {
             System.out.println("\u001B[34m︵‿︵‿︵＼ʕ •ᴥ•ʔ／︵‿︵‿︵\u001B[0m");
@@ -36,7 +34,7 @@ public class Option {
             choice = sc.nextInt();
 
             AllMenu fd = new AllMenu();
-            Category cg = new Category();
+            CategoryService cg = new CategoryService();
             MolppangRandom rd = new MolppangRandom();
             Dutchpay dp = new Dutchpay();
             RandomFoodInput rfi = new RandomFoodInput();
@@ -52,7 +50,8 @@ public class Option {
                 case 2:
                     System.out.println();
                     System.out.println("<카테고리 선택 후 랜덤 메뉴 추천>");
-                    controller.category();
+                    showCategoryList();
+                    selectCatoryByMenuList();
 
                     break;
                 case 3:
@@ -90,6 +89,90 @@ public class Option {
                     break;
             }
         } while (choice != 0);
+    }
+
+    /**
+     * 사용자에게 카테고리목록을 보여주고 선택하기 위한 용도의 메소드
+     * */
+    private void selectCatoryByMenuList() {
+        Scanner sc = new Scanner(System.in);
+
+        int categoryChoice = 0;
+        do {
+
+            System.out.println("     \u001B[32m┌──────────────┐" + "     \u001B[31m┌──────────────┐" + "     \u001B[33m┌──────────────┐" + "     \u001B[34m┌──────────────┐" + "     \u001B[36m┌────────────────┐");
+            System.out.println("     \u001B[32m   1.　한  식    " + "     \u001B[31m   2.　일  식    " + "　　  \u001B[33m   3.　양  식    " + "　　　\u001B[34m   4.　중  식    " + "     \u001B[36m   5. 돌 아 가 기    ");
+            System.out.println("     \u001B[32m└──────────────┘" + "     \u001B[31m└──────────────┘" + "     \u001B[33m└──────────────┘" + "     \u001B[34m└──────────────┘" + "     \u001B[36m└────────────────┘");
+            System.out.print("\u001B[0m");
+            System.out.print("     ──────────────────────────────────  위의 카테고리 중 1개를 선택하세요  ────────────────────────────────── ▷" + " ");
+            System.out.print("");
+
+            try {
+                categoryChoice = Integer.parseInt(sc.next());
+            } catch (NumberFormatException e) {
+                System.out.println("                               \u001B[31m숫자가 아닌 걸 입력하셨군요 ! 숫자로 다시 입력해 주세요 ! ");
+                System.out.print("\u001B[0m");
+                sc.nextLine();
+                continue;
+            }
+
+           List<Food> categoryByCodeList = controller.selectMenuByCode(categoryChoice); // 카테고리 코드를 이용한 메뉴
+
+//            System.out.println("========================================");
+//            for (Food f : categoryByCodeList) {
+//                System.out.println(f);
+//            }
+//
+//
+//            System.out.println("========================================");
+
+
+
+            switch (categoryChoice) {
+
+                case 1: // 한식
+                    printResult(categoryByCodeList);
+                    break;
+                case 2: // 일식
+                    printResult(categoryByCodeList);
+                    break;
+
+                case 3: // 양식
+                    printResult(categoryByCodeList);
+                    break;
+
+                case 4: // 중식
+                    printResult(categoryByCodeList);
+                    break;
+
+                case 5: // 돌아가기
+                    return;
+
+                default:
+                    System.out.println("                                   \u001B[31m※※※※※유효하지 않은 선택입니다.※※※※※");
+                    System.out.println("     \u001B[0m──────────────────────────────────────────  다시 골라주세요 ────────────────────────────────────────── ");
+            }
+        } while (categoryChoice != 5);
+    }
+
+    /**
+     * 카테고리 선택 후 랜덤 메뉴 추천 에서 
+     * 카테고리 리스트 조회용 메소드
+     * */
+    private void showCategoryList() {
+
+        List<CategoryDTO> categoryList = controller.selectCategoryList();
+
+        for(CategoryDTO f : categoryList) { // 항상된 for문
+            System.out.println(f.getCategoryNum() + " , " + f.getCategoryName());
+        }
+    }
+
+    private void printResult(List<Food> categoryByCodeList) {
+
+        int randomcate = (int) (Math.random() * categoryByCodeList.size());
+        Food result = categoryByCodeList.get(randomcate);
+        System.out.println(result.getMenuName());
     }
 
 }

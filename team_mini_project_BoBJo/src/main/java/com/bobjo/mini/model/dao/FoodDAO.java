@@ -1,6 +1,7 @@
 package com.bobjo.mini.model.dao;
 
 import com.bobjo.mini.common.JDBCTemplate;
+import com.bobjo.mini.model.dto.CategoryDTO;
 import com.bobjo.mini.model.dto.Food;
 
 import java.io.FileInputStream;
@@ -86,11 +87,12 @@ public class FoodDAO {
         return result;
     }
 
-    public  List<Food> category(Connection con) {
+    public List<CategoryDTO> selectCategoryList(Connection con) {
+
         PreparedStatement pstmt = null;
         ResultSet rset = null;
 
-        List<Food> categoryList = null;
+        List<CategoryDTO> categoryList = null;
 
         String query = prop.getProperty("category");
 
@@ -102,7 +104,40 @@ public class FoodDAO {
 
             while (rset.next()){
 
+                CategoryDTO categoryDTO = new CategoryDTO();
+                categoryDTO.setCategoryNum(rset.getInt("categoryNum"));
+                categoryDTO.setCategoryName(rset.getString("categoryName"));
+
+                categoryList.add(categoryDTO);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            close(rset);
+            close(pstmt);
+        }
+        return categoryList;
+    }
+
+    public List<Food> selectMenuByCode(Connection con, int code) {
+        PreparedStatement pstmt = null;
+        ResultSet rset = null;
+
+        List<Food> categoryList = null;
+
+        String query = prop.getProperty("categoryByCode");
+
+        try {
+            pstmt = con.prepareStatement(query);
+            pstmt.setInt(1, code);
+            rset = pstmt.executeQuery();
+
+            categoryList = new ArrayList<>();
+
+            while (rset.next()){
+
                 Food food = new Food();
+                food.setMenuNum(rset.getInt("menuNum"));
                 food.setMenuName(rset.getString("menuName"));
                 food.setCategoryNum(rset.getInt("categoryNum"));
 
