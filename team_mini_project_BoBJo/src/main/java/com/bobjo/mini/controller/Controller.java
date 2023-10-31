@@ -50,5 +50,5 @@ public class Controller {
         List<Food> foodList = categoryService.selectMenuByCode(code);
 
         return foodList;
-     }
+    }
 }

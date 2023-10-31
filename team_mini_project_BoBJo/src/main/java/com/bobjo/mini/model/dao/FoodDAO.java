@@ -26,7 +26,6 @@ public class FoodDAO {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     public List<Food> selectAllMenu(Connection con) {
@@ -75,7 +74,6 @@ public class FoodDAO {
             pstmt.setInt(3, categoryNum);
 
             result = pstmt.executeUpdate();
-
 
 
         } catch (SQLException e) {

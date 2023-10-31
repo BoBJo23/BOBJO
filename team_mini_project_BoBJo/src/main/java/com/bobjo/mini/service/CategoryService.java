@@ -22,7 +22,6 @@ public class CategoryService {
 
     public void categoryRandom() {
 
-
     }
 
     public List<CategoryDTO> selectCategoryList() {
