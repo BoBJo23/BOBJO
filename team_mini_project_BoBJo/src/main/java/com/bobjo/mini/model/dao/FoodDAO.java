@@ -1,6 +1,5 @@
 package com.bobjo.mini.model.dao;
 
-import com.bobjo.mini.common.JDBCTemplate;
 import com.bobjo.mini.model.dto.Food;
 
 import java.io.FileInputStream;

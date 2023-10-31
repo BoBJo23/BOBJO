@@ -1,5 +1,4 @@
-<<<<<<<< HEAD:team_mini_project_BoBJo/src/main/java/com/bobjo/mini/controller/RandomFromAll.java
-========
+
 package com.bobjo.mini.service;
 
 import com.bobjo.mini.model.dto.Food;
@@ -80,4 +79,3 @@ public class RandomFromAll {
 
     }
 }
->>>>>>>> 67242f8c9b864e50471a9ac134051a2fb392196f:team_mini_project_BoBJo/src/main/java/com/bobjo/mini/service/RandomFromAll.java
