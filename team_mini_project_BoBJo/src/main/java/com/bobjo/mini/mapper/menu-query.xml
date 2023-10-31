@@ -4,7 +4,8 @@
     <comment/>
     <entry key="selectAllMenu">
         SELECT  A.menuNum,
-                A.menuName
+                A.menuName,
+                A.categoryNum
         FROM    tbl_menu A
     </entry>
     <entry key="addMenu">
