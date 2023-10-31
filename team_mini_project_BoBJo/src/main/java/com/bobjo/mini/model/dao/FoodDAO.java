@@ -47,6 +47,7 @@ public class FoodDAO {
                 Food food = new Food();
                 food.setMenuName(rset.getString("menuName"));
                 food.setMenuNum(rset.getInt("menuNum"));
+                food.setCategoryNum(rset.getInt("categoryNum"));
 
 
                 foodList.add(food);
