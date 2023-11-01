@@ -113,14 +113,12 @@ public class Option {
                 continue;
             }
 
-           List<Food> categoryByCodeList = controller.selectMenuByCode(categoryChoice); // 카테고리 코드를 이용한 메뉴
-
+            List<Food> categoryByCodeList = controller.selectMenuByCode(categoryChoice); // 카테고리 코드를 이용한 메뉴
 //            System.out.println("========================================");
 //            for (Food f : categoryByCodeList) {
 //                System.out.println(f);
 //            }
 //            System.out.println("========================================");
-
             switch (categoryChoice) {
 
                 case 1: // 한식
@@ -149,23 +147,88 @@ public class Option {
     }
 
     /**
-     * 카테고리 선택 후 랜덤 메뉴 추천 에서 
+     * 카테고리 선택 후 랜덤 메뉴 추천 에서
      * 카테고리 리스트 조회용 메소드
      * */
     private void showCategoryList() {
-
         List<CategoryDTO> categoryList = controller.selectCategoryList();
 
         for(CategoryDTO f : categoryList) { // 항상된 for문
-            System.out.println(f.getCategoryNum() + " , " + f.getCategoryName());
+//            System.out.println("     \u001B[32m┌─────────┐");
+            System.out.println("       " + f.getCategoryNum()+ ". " + f.getCategoryName()+"   ");
+//            System.out.println("     \u001B[32m└─────────┘");
         }
     }
 
     private void printResult(List<Food> categoryByCodeList) {
 
         int randomcate = (int) (Math.random() * categoryByCodeList.size());
-        Food result = categoryByCodeList.get(randomcate);
-        System.out.println(result.getMenuName());
-    }
 
+        Food result = categoryByCodeList.get(randomcate);
+
+        System.out.println("\u001B[33m                 ─────────────────────────────  오늘 메뉴는  ─────────────────────────────");
+        System.out.println("\u001B[33m                       ⣿⣿⣿⣿⣿⣿⣿⣿⣿    ⣿⣿⣿⣿⣿⣿⣿⣿⣿     ⣿⣿⣿⣿⣿⣿⣿⣿⣿     ⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+        System.out.println("\u001B[33m                       ⣿                        ⣿     ⣿                          ⣿ ");
+        System.out.println("\u001B[33m                       ⣿⣿⣿⣿⣿⣿⣿⣿⣿                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿                 ");
+        System.out.println("\u001B[33m                                    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿                  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ ");
+        System.out.println("\u001B[33m                      ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿                 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿                ");
+        System.out.println("\u001B[33m                            ⣿          ⣿                   ⣿           ⣿          ");
+        System.out.println("\u001B[33m                            ⣿          ⣿⣿⣿⣿⣿⣿⣿⣿⣿         ⣿           ⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+        System.out.println("\u001B[33m                 ────────────────────────────────────────────────────────────────────────");
+        System.out.println("\u001B[33m                 ────────────────────────────────────────────────────────────────────────");
+        System.out.println("                              ★★★★★★★★★★★★ " + "( " + result.getMenuName() + " )" + " 당첨 ★★★★★★★★★★★★");
+        System.out.println("\u001B[33m                 ────────────────────────────────────────────────────────────────────────");
+        System.out.print("\u001B[0m");
+
+        Scanner sc = new Scanner(System.in);
+        int number;
+
+        do {
+            System.out.print("\u001B[0m        >" + " 1. 카테고리 다시 뽑기 <  ");
+            System.out.print("         >" + " 2. 메인으로 돌아가기 <   ");
+            System.out.println("        >" + " 3. 프로그램 종료 <  ");
+            System.out.println("");
+            System.out.print("                              \u001B[36m※ 필요한 메뉴가 있으면 위에서 골라주세요 ※ : ");
+            System.out.print("\u001B[0m");
+
+            if (!sc.hasNextInt()) {
+                sc.next();
+                System.out.print("             \u001B[31m───────────────────────────── 올바른 숫자를 입력하세요 ─────────────────────────────");
+                System.out.println("\u001B[0m");
+            } else {
+            }
+            number = sc.nextInt();
+
+            if (number >= 4) {
+                System.out.print("                          \u001B[31m※ 메뉴에서 없는 번호를 선택하였음으로 프로그램 종료합니다 ※");
+                System.out.println("\u001B[0m");
+                System.out.println("⠄⠀                                  ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣴⣶⣶⣶⣶⣶⠶⣶⣤⣤⣀⠀⠀⠀⠀⠀⠀\n" +
+                        "⠀⠀                                 ⠀⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⠁⠀⢀⠈⢿⢀⣀⠀⠹⣿⣿⣿⣦⣄⠀⠀⠀\n" +
+                        "⠀⠀                                ⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⠿⠀⠀⣟⡇⢘⣾⣽⠀⠀⡏⠉⠙⢛⣿⣷⡖⠀\n" +
+                        "⠀⠀                                ⠀⠀⠀⣾⣿⣿⡿⠿⠷⠶⠤⠙⠒⠀⠒⢻⣿⣿⡷⠋⠀⠴⠞⠋⠁⢙⣿⣄\n" +
+                        "⠀⠀                                ⠀⠀⢸⣿⣿⣯⣤⣤⣤⣤⣤⡄⠀⠀⠀⠀⠉⢹⡄⠀⠀⠀⠛⠛⠋⠉⠹⡇\n" +
+                        "⠀⠀                                ⠀⠀⢸⣿⣿⠀⠀⠀⣀⣠⣤⣤⣤⣤⣤⣤⣤⣼⣇⣀⣀⣀⣛⣛⣒⣲⢾⡷\n" +
+                        "                               ⢀⠤⠒⠒⢼⣿⣿⠶⠞⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀⣼⠃\n" +
+                        "                               ⢮⠀⠀⠀⠀⣿⣿⣆⠀⠀⠻⣿⡿⠛⠉⠉⠁⠀⠉⠉⠛⠿⣿⣿⠟⠁⠀⣼⠃⠀\n" +
+                        "                               ⠈⠓⠶⣶⣾⣿⣿⣿⣧⡀⠀⠈⠒⢤⣀⣀⡀⠀⠀⣀⣀⡠⠚⠁⠀⢀⡼⠃⠀⠀\n" +
+                        "                               ⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣷⣤⣤⣤⣤⣭⣭⣭⣭⣭⣥⣤⣤⣤⣴⣟⠁");
+                System.out.printf("\u001B[31m" + "\n%60s", "┌─────────────────┐");
+                System.out.printf("\u001B[31m" + "\n%60s", "|  T H E   E N D  |");
+                System.out.printf("\u001B[31m" + "\n%61s", "└─────────────────┘\n");
+                System.out.print("\u001B[0m");
+                System.exit(0);
+            }
+            switch (number) {
+                case 1:
+                    showCategoryList();
+                    break;
+                case 2:
+                    mainmenu();
+                    break;
+                case 3:
+                    System.exit(0);
+                    break;
+            }
+        } while (number == 3 || number == 2);
+    }
 }
