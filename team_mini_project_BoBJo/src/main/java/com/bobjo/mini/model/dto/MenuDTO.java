@@ -1,29 +1,27 @@
 package com.bobjo.mini.model.dto;
 
-import java.util.ArrayList;
-import java.util.List;
+public class MenuDTO {
 
-public class Food implements java.io.Serializable {
-    private Integer menuNum;
+    private int menuNum;
     private String menuName;
     private int categoryNum;
-    private int countingChoice;
+    private int countingChoices;
 
-    public Food() {
+    public MenuDTO() {
     }
 
-    public Food(Integer menuNum, String menuName, int categoryNum, int countingChoice) {
+    public MenuDTO(int menuNum, String menuName, int categoryNum, int countingChoices) {
         this.menuNum = menuNum;
         this.menuName = menuName;
         this.categoryNum = categoryNum;
-        this.countingChoice = countingChoice;
+        this.countingChoices = countingChoices;
     }
 
-    public Integer getMenuNum() {
+    public int getMenuNum() {
         return menuNum;
     }
 
-    public void setMenuNum(Integer menuNum) {
+    public void setMenuNum(int menuNum) {
         this.menuNum = menuNum;
     }
 
@@ -43,21 +41,21 @@ public class Food implements java.io.Serializable {
         this.categoryNum = categoryNum;
     }
 
-    public int getCountingChoice() {
-        return countingChoice;
+    public int getCountingChoices() {
+        return countingChoices;
     }
 
-    public void setCountingChoice(int countingChoice) {
-        this.countingChoice = countingChoice;
+    public void setCountingChoices(int countingChoices) {
+        this.countingChoices = countingChoices;
     }
 
     @Override
     public String toString() {
-        return "Food{" +
+        return "MenuDTO{" +
                 "menuNum=" + menuNum +
                 ", menuName='" + menuName + '\'' +
                 ", categoryNum=" + categoryNum +
-                ", countingChoice=" + countingChoice +
+                ", countingChoices=" + countingChoices +
                 '}';
     }
 }

@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@root" uuid="a14f1272-9eab-4094-8b67-051b76e63000">
+    <data-source source="LOCAL" name="randomfood@mysql.coffit.today" uuid="74a3c95b-d48a-4f8b-aacd-d201d97ec05d">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://mysql.coffit.today:3300/mysql</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="@mysql.coffit.today" uuid="4de546dc-6980-4ef6-befb-24166e38d693">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://mysql.coffit.today:3300/</jdbc-url>
+      <jdbc-url>jdbc:mysql://mysql.coffit.today:3300/randomfood</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
