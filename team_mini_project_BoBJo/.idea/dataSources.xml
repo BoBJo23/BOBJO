@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://mysql.coffit.today:3300/randomfood</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="randomfood@mysql.coffit.today [2]" uuid="e19f48c1-2aa4-4900-add0-8e50a14969bd">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://mysql.coffit.today:3300/randomfood</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

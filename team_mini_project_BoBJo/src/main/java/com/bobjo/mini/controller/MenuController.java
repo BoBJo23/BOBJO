@@ -5,6 +5,7 @@ import com.bobjo.mini.service.MenuService;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 public class MenuController {
 
@@ -47,26 +48,56 @@ public class MenuController {
 //        }
 //    }
 //
-//    public void registMenu(Map<String, String> parameter) {
-//
-//        String name = parameter.get("name");
-//        int price = Integer.parseInt(parameter.get("price"));
-//        int categoryCode = Integer.parseInt(parameter.get("categoryCode"));
-//
-//        MenuDTO menu = new MenuDTO();
-//        menu.setName(name);
-//        menu.setPrice(price);
-//        menu.setCategoryCode(categoryCode);
-//
-//        System.out.println("menu = " + menu);
-//
-//        if(menuService.insertMenu(menu)){
-//            printResult.printSuccessMessage("insert");
-//        } else {
-//            printResult.printErrorMessage("insert");
-//        }
-//
-//    }
+    public void registMenu(Map<String, String> parameter) {
+
+        String menuName = parameter.get("menuName");
+        int categoryNum = Integer.parseInt(parameter.get("categoryNum"));
+
+        MenuDTO menu = new MenuDTO();
+        menu.setMenuName(menuName);
+        menu.setCategoryNum(categoryNum);
+
+        System.out.println("menu = " + menu);
+
+        if(menuService.insertMenu(menu)){
+            printResult.printSuccessMessage("insert");
+        } else {
+            printResult.printErrorMessage("insert");
+        }
+    }
+
+    public void getRandomMenu() {
+            Scanner scanner = new Scanner(System.in);
+            int answer;
+
+            do {
+                MenuDTO randomMenu = menuService.getRandomMenu();
+
+                if (randomMenu != null) {
+                    System.out.println("♡ " + randomMenu.getMenuName() + " ♡");
+                    System.out.println("");
+                    System.out.println("'1' 입력 : 이 메뉴로 결정하기");
+                    System.out.println("'2' 입력 : 메뉴 새로 뽑기");
+                    System.out.println();
+
+                    System.out.print("입력 : ");
+                    answer = scanner.nextInt();
+
+                    if (answer == 1) {
+                        // 선택된 메뉴로 결정하는 작업
+                        System.out.println("메뉴를 선택했습니다: " + randomMenu.getMenuName());
+                        break;
+                    }
+                } else {
+                    System.out.println("No menu available.");
+                    answer = 0;  // 메뉴가 없으면 루프를 종료
+                }
+            } while (answer == 2);
+
+            // 이걸로 결정할 건지 다시 뽑을 건지에 대한 작업 추가
+            // 예를 들어, 선택된 메뉴를 가지고 다른 작업을 수행하거나 메뉴를 저장하는 등의 로직을 추가할 수 있습니다.
+        }
+    }
 //
 //    public void modifyMenu(Map<String, String> parameter) {
 //
@@ -100,4 +131,4 @@ public class MenuController {
 //            printResult.printErrorMessage("delete");
 //        }
 //    }
-}
+

@@ -5,6 +5,7 @@ import com.bobjo.mini.model.dto.MenuDTO;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
+import java.util.Random;
 
 import static com.bobjo.mini.common.Template.getSqlSession;
 
@@ -21,18 +22,6 @@ public class MenuService {
         sqlSession.close();
 
         return menuList;
-    }
-
-    public MenuDTO selectMenuByCode(int code) {
-
-        SqlSession sqlSession = getSqlSession();
-
-        MenuMapper menuMapper = sqlSession.getMapper(MenuMapper.class);
-        MenuDTO menu = menuMapper.selectMenuByCode(code);
-
-        sqlSession.close();
-
-        return menu;
     }
 
     public boolean insertMenu(MenuDTO menu) {
@@ -54,36 +43,17 @@ public class MenuService {
         return result > 0? true: false;
     }
 
-    public boolean modifyMenu(MenuDTO menu) {
+    public MenuDTO getRandomMenu() {
+        List<MenuDTO> menuList = selectAllMenu();
 
-        SqlSession sqlSession = getSqlSession();
-
-        MenuMapper menuMapper = sqlSession.getMapper(MenuMapper.class);
-        int result = menuMapper.updateMenu(menu);
-
-        if(result > 0) {
-            sqlSession.commit();
+        if (menuList != null && !menuList.isEmpty()) {
+            Random random = new Random();
+            int randomIndex = random.nextInt(menuList.size());
+            return menuList.get(randomIndex);
         } else {
-            sqlSession.rollback();
+            // 메뉴가 없을 경우에 대한 처리
+            return null;
         }
-        return result > 0? true: false;
     }
 
-    public boolean deleteMenu(int code) {
-
-        SqlSession sqlSession = getSqlSession();
-
-        MenuMapper menuMapper = sqlSession.getMapper(MenuMapper.class);
-        int result = menuMapper.deleteMenu(code);
-
-        if(result > 0) {
-            sqlSession.commit();
-        } else {
-            sqlSession.rollback();
-        }
-
-        sqlSession.close();
-
-        return result > 0? true: false;
-    }
 }
